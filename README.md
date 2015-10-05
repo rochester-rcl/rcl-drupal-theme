@@ -1,4 +1,4 @@
-# rcl-drupal-theme
+#RCL Drupal Theme
 A custom drupal theme created for the River Campus libraries web site.
 
 ### Installation
