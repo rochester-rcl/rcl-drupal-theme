@@ -1,0 +1,19 @@
+name= RCL 2.0
+description= This is a theme created for the River Campus Libraries.
+core=7.x
+engine=phptemplate
+
+regions[header]=Header
+regions[logo]=Logo
+regions[news]=News
+regions[events]=Events
+regions[content]=Content
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[footer]=Footer
+
+stylesheets[all][]=main.css
+
+features[]=name
+features[=main_menu]
