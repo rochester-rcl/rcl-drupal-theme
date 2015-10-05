@@ -12,6 +12,8 @@ Install this theme as you would any other Drupal theme.
 
 ### Modules
 ###### Dependent Modules
+[Views](https://www.drupal.org/project/views)
+Helps you to filter and find you modules quickly.
 
 ###### Helpful Modules
 [Module Filter](https://www.drupal.org/project/module_filter)
