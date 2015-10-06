@@ -2,7 +2,7 @@
 A custom drupal theme created for the River Campus libraries web site.
 
 ## Requirements
-Before you install please make sure you're Drupal instance meets the following requirements.
+Before you install please make sure your Drupal instance meets the following requirements.
 
 - [Bootstrap](https://drupal.org/project/bootstrap) 7.x-2.0 or 7.x-3.0 (base-theme must be enabled).
 
