@@ -6,10 +6,11 @@ _______________________________*/
 /* Font import */
 
 
+/* Bootstrap */
+@import url("bootstrap.min.css");
+
+
+
+
 /* Overides and custom */
 @import url("nav.css");
-
-
-/* Bootstrap Styles */
-@import url("c/bootstrap.css");
-@import url("css/bootstrap-theme.css");
