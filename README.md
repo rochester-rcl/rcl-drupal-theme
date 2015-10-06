@@ -26,6 +26,3 @@ Helps you to filter and find you modules quickly.
 
 - [Module Filter](https://www.drupal.org/project/module_filter)
 Helps you to filter and find you modules quickly.
-
-- [Module Filter](https://www.drupal.org/project/module_filter)
-Helps you to filter and find you modules quickly.
