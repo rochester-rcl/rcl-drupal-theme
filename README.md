@@ -1,3 +1,5 @@
+> This project is currently under development.
+
 # RCL Drupal Theme
 A custom drupal theme created for the River Campus libraries web site.
 
@@ -16,13 +18,14 @@ Install this theme as you would any other Drupal theme.
 3. Find the **RCL Theme** then activate & set as default.
 ```
 
-
 ### Modules
 
 - [Views](https://www.drupal.org/project/views)
-Helps you to filter and find you modules quickly.
+Allows you to display dynamic content via the database.
 
 #### Helpful Modules
 
 - [Module Filter](https://www.drupal.org/project/module_filter)
+Helps you to filter and find you modules quickly.
+- [Devel](https://www.drupal.org/project/devel)
 Helps you to filter and find you modules quickly.
