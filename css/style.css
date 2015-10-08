@@ -1,8 +1,11 @@
-/**
- * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
- * remove this comment and start adding your styles to this file.
- */
+/* ----------------------------
 
+MASTER STYLESHEET
+-------------------------------
+This is the master stylesheet.
+It contains all styles for this
+sub-theme.
+-------------------------------*/
 
 @import url("nav.css");
 @import url("colors.css");

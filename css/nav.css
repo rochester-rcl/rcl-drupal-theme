@@ -1,9 +1,147 @@
+/* ----------------------------
+
+NAVIGATION STYLES
+-------------------------------
+This file contains styles that
+effect the navigation bar.
+
+Notes:
+Using .navbar-default (a standard
+bootstrap element) for the RCL header
+portion.
+
+-------------------------------*/
 
 
-.navbar-rclblue {
-    background-color: #234b87;
+
+
+/* CUSTOM STYLES
+-------------------------------*/
+
+/* Search box grow on focus */
+.navbar-search-grow {
+    width: 50px;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition:width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    }
+    .navbar-search-grow:focus{
+    width: 120px;
+    }
+
+
+
+/* UofR bar  */
+.uofrbar {
+  background-color: #021e47;
+  width: 100%;
 }
 
 
 
+
+/* OVERIDES
+-------------------------------*/
+
 .navbar {border: none;}
+
+.navbar-brand img {
+    width: 215px;
+    height: auto;
+    position: relative;
+    bottom: 3px;
+}
+
+/* Navbar color for RCL bar */
+.navbar-default {
+    background-color: #234b87;
+}
+
+/* Moving navbar down to fit uofrbar */
+.navbar-fixed-top {
+  top: 30px;
+  border-width: 0 0 1px;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+
+/* RCL Logo */
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: #75a5ff;
+}
+/* Nav link default color  */
+.navbar-default .navbar-nav > li > a {
+  color: #71a8fc;
+}
+/* Nav link Hover/Focus color  */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FFF;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+
+/* Removing border on mobile menu */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+  box-shadow: none;
+}
+
+/* Responsive hamburger menu modifications */
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #71a8fc;
+}
+.navbar-default .navbar-toggle .icon-bar:hover,
+.navbar-default .navbar-toggle .icon-bar:focus,  {
+  background-color: #FFF;
+}
+/* Removing border around hamburger menu */
+.navbar-default .navbar-toggle {
+    border: none;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background: none;
+  outline: none;
+}
+
+/* Better style for search box on mobile */
+@media (max-width: 768px) {
+  input.form-control.navbar-search-grow {
+      width: 95%;
+      margin: auto;
+  }
+}

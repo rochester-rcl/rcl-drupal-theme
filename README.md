@@ -28,4 +28,10 @@ Allows you to display dynamic content via the database.
 - [Module Filter](https://www.drupal.org/project/module_filter)
 Helps you to filter and find you modules quickly.
 - [Devel](https://www.drupal.org/project/devel)
-Helps you to filter and find you modules quickly.
+Devel was used to prevent Drupal from caching theme. After installing go to "Administration » Configuration » Development » Devel settings" and check **Rebuild the theme registry on every page load**
+
+### File Paths
+If you add images into the theme you must use the correct php based path and place your image into the **images** folder.
+```
+<img class="" src="<?php print $directory;?>/images/<filename>" />
+```
