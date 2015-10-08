@@ -23,8 +23,12 @@ Install this theme as you would any other Drupal theme.
 - [Views](https://www.drupal.org/project/views)
 Allows you to display dynamic content via the database.
 
-#### Helpful Modules
+#### Other Modules
 
+|- [Adminimal Administration Menu](https://www.drupal.org/project/adminimal_admin_menu)
+Minimalist admin menu.|
+|- [Adminimal Administration Menu](https://www.drupal.org/project/adminimal_admin_menu)
+Minimalist admin menu.|
 - [Module Filter](https://www.drupal.org/project/module_filter)
 Helps you to filter and find you modules quickly.
 - [Devel](https://www.drupal.org/project/devel)

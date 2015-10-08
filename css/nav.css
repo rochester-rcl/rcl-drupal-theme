@@ -18,6 +18,20 @@ portion.
 /* CUSTOM STYLES
 -------------------------------*/
 
+/* UofR bar  */
+.uofrbar {
+  background-color: #021e47;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+}
+/* UofR logo in navbar */
+.navbar-brand-uofr-logo{
+  width: 210px;
+  height: auto;
+}
+
+
 /* Search box grow on focus */
 .navbar-search-grow {
     width: 50px;
@@ -30,14 +44,13 @@ portion.
     width: 120px;
     }
 
-
-
-/* UofR bar  */
-.uofrbar {
-  background-color: #021e47;
-  width: 100%;
+/* Search icon over the navbar searchbox */
+.nav-search-icon{
+  position: relative;
+  right: 36px;
+  top: 2px;
+  color: #c4dbff;
 }
-
 
 
 
@@ -60,7 +73,7 @@ portion.
 
 /* Moving navbar down to fit uofrbar */
 .navbar-fixed-top {
-  top: 30px;
+  top: 35px;
   border-width: 0 0 1px;
 }
 .navbar-fixed-top,
@@ -136,6 +149,37 @@ portion.
 .navbar-default .navbar-toggle:focus {
   background: none;
   outline: none;
+}
+
+
+/*
+------------------------------------------------
+NAVBAR >> SEARCH BOX
+------------------------------------------------
+*/
+
+/* Changing the search box styles inside nav */
+.navbar .form-control {
+  background-color: #71a8fc;
+  border: none;
+  color: #FFF;
+  }
+  .navbar .form-control:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+  }
+
+/* Changing the placecolor inside navbar  */
+.navbar .form-control::-moz-placeholder {
+  color: #c4dbff;
+  opacity: 1;
+}
+.navbar .form-control:-ms-input-placeholder {
+  color: #c4dbff;
+}
+.navbar .form-control::-webkit-input-placeholder {
+  color: #c4dbff;
 }
 
 /* Better style for search box on mobile */

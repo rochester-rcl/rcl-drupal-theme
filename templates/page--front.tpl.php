@@ -1,7 +1,12 @@
 
 <!-- UofR bar -->
 <div class="uofrbar">
-
+ <div class="container">
+   <!-- UofR Logo -->
+   <a class="" href="#">
+     <img class="navbar-brand-uofr-logo" src="<?php print $directory;?>/images/logo-uofr.png" />
+   </a>
+ </div>
 </div>
 
 <!-- RCL navigation bar -->
@@ -32,18 +37,14 @@
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
             <input class="form-control navbar-search-grow" data-toggle="tooltip" data-placement="bottom" placeholder="" onfocus="this.placeholder = 'Search...'" onblur="this.placeholder = ''" title="Seach the Library website" type="text" name="firstname"/>
+            <span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span>
             <!-- <input type="text" class="form-control navbar-search-grow" placeholder="Search"> -->
 
           </div>
-          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span></button>
+          <!-- <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span></button> -->
         </form>
         </li>
       </ul>
     </div>
   </div>
-</div>
-
-<div>
-<input type="text" onfocus="this.placeholder = 'Search...'" onblur="this.placeholder = ''" />
-
 </div>
