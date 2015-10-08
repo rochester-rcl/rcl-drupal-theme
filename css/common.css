@@ -1,0 +1,40 @@
+/* ----------------------------
+
+COMMON STYLES
+-------------------------------
+These are the global base styles.
+-------------------------------*/
+
+
+/* CUSTOM STYLES
+-------------------------------*/
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/*div{outline: 1px solid red}*/
+
+body {}
+* {
+  margin:0;
+  padding:0;
+}
+
+
+
+/* OVERIDES
+-------------------------------*/
+
+/* Pushing the main content down to
+compensate for the fixed header.*/
+.main-container.container {
+    margin-top: 100px;
+}

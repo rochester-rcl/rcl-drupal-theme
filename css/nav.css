@@ -24,6 +24,8 @@ portion.
   width: 100%;
   height: 35px;
   padding: 5px;
+  position: fixed;
+  top: 0;
 }
 /* UofR logo in navbar */
 .navbar-brand-uofr-logo{
@@ -33,8 +35,8 @@ portion.
 
 
 /* Search box grow on focus */
-.navbar-search-grow {
-    width: 50px;
+.navbar-search-grow, .form-control {
+    width: 70px;
     -webkit-transition: width 0.5s ease-in-out;
     -moz-transition:width 0.5s ease-in-out;
     -o-transition: width 0.5s ease-in-out;
@@ -42,6 +44,7 @@ portion.
     }
     .navbar-search-grow:focus{
     width: 120px;
+    position: relative;
     }
 
 /* Search icon over the navbar searchbox */
@@ -160,7 +163,7 @@ NAVBAR >> SEARCH BOX
 
 /* Changing the search box styles inside nav */
 .navbar .form-control {
-  background-color: #71a8fc;
+  background-color: #021e47;
   border: none;
   color: #FFF;
   }
@@ -183,7 +186,7 @@ NAVBAR >> SEARCH BOX
 }
 
 /* Better style for search box on mobile */
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   input.form-control.navbar-search-grow {
       width: 95%;
       margin: auto;

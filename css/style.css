@@ -7,5 +7,14 @@ It contains all styles for this
 sub-theme.
 -------------------------------*/
 
+
+/* TABLE OF CONTENTS */
+
+/* 1. COMMON - Global styles*/
+@import url("common.css");
+
+/* 2. NAV - Navigation/header styles*/
 @import url("nav.css");
+
+/* 3. COLORS - Site colors */
 @import url("colors.css");

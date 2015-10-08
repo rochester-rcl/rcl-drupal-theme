@@ -36,8 +36,8 @@
         <!-- Search box -->
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input class="form-control navbar-search-grow" data-toggle="tooltip" data-placement="bottom" placeholder="" onfocus="this.placeholder = 'Search...'" onblur="this.placeholder = ''" title="Seach the Library website" type="text" name="firstname"/>
-            <span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span>
+            <input class="form-control navbar-search-grow" placeholder="Search" title="Seach the Library website" type="text" name="firstname"/>
+            <!-- <span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span> -->
             <!-- <input type="text" class="form-control navbar-search-grow" placeholder="Search"> -->
 
           </div>
@@ -47,4 +47,9 @@
       </ul>
     </div>
   </div>
+</div>
+
+<!-- Content Begins -->
+<div class="main-container container">
+  <?php print $messages; ?>
 </div>

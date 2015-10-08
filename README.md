@@ -44,3 +44,15 @@ If you add images into the theme you must use the correct php based path and pla
 ```
 <img class="" src="<?php print $directory;?>/images/<filename>" />
 ```
+
+### Known Issues
+- Admin bar can be buggy on mobile
+
+### Other
+Temporary place for uncategorized items
+
+- PHP code for printing page title:
+```
+<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+
+```
