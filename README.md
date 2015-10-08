@@ -23,6 +23,16 @@ Install this theme as you would any other Drupal theme.
 - [Views](https://www.drupal.org/project/views)
 Allows you to display dynamic content via the database.
 
+### Editors and Media Management Modules
+
+- [CKEditor](http://ckeditor.com/download)
+WYSIWYG text editor. **Installation:**
+  1. First [download the module](https://www.drupal.org/project/ckeditor) and Install
+  2. Then [download the **Full Package** package](http://ckeditor.com/download)
+  3. Unzip the file and empty all files inside the folder to **modules » ckeditor » ckeditor** folder.
+  4. Go to **Administration » Modules** and enable.
+
+
 #### Other Modules
 
 - [Adminimal - Responsive Administration Theme](https://www.drupal.org/project/adminimal_admin_menu)
@@ -32,12 +42,17 @@ A better drupal admin theme.
     2. Select **Adminimal** from the dropdown, and click **Save Configuration**.
     3. After you have set the theme it is suggested that you use the **Material** skin.
     4. To change the skin go to **Administration » Appearance » Settings** select **Material (BETA version)** from the dropdown and click **Save Configuration** at the bottom of the page.
+
 - [Adminimal Administration Menu](https://www.drupal.org/project/adminimal_admin_menu)
 Minimalist admin menu.
+
 - [Module Filter](https://www.drupal.org/project/module_filter)
 Helps you to filter and find you modules quickly.
+
 - [Devel](https://www.drupal.org/project/devel)
 Devel was used to prevent Drupal from caching theme. After installing go to "Administration » Configuration » Development » Devel settings" and check **Rebuild the theme registry on every page load**
+
+
 
 ### File Paths
 If you add images into the theme you must use the correct php based path and place your image into the **images** folder.

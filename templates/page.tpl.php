@@ -74,6 +74,15 @@
  */
 ?>
 
+<!-- UofR bar -->
+<div class="uofrbar">
+ <div class="container">
+   <!-- UofR Logo -->
+   <a class="" href="#">
+     <img class="navbar-brand-uofr-logo" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-uofr.png" />
+   </a>
+ </div>
+</div>
 
 <header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
   <div class="container">

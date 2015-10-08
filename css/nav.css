@@ -26,6 +26,7 @@ portion.
   padding: 5px;
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
 /* UofR logo in navbar */
 .navbar-brand-uofr-logo{
