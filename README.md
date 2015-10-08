@@ -25,10 +25,15 @@ Allows you to display dynamic content via the database.
 
 #### Other Modules
 
-|- [Adminimal Administration Menu](https://www.drupal.org/project/adminimal_admin_menu)
-Minimalist admin menu.|
-|- [Adminimal Administration Menu](https://www.drupal.org/project/adminimal_admin_menu)
-Minimalist admin menu.|
+- [Adminimal - Responsive Administration Theme](https://www.drupal.org/project/adminimal_admin_menu)
+A better drupal admin theme.
+  - **Installing:** Install like just like a normal Drupal theme.
+    1. Go to **admin » appearance**, scroll to the bottom of page
+    2. Select **Adminimal** from the dropdown, and click **Save Configuration**.
+    3. After you have set the theme it is suggested that you use the **Material** skin.
+    4. To change the skin go to **Administration » Appearance » Settings** select **Material (BETA version)** from the dropdown and click **Save Configuration** at the bottom of the page.
+- [Adminimal Administration Menu](https://www.drupal.org/project/adminimal_admin_menu)
+Minimalist admin menu.
 - [Module Filter](https://www.drupal.org/project/module_filter)
 Helps you to filter and find you modules quickly.
 - [Devel](https://www.drupal.org/project/devel)
