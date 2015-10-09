@@ -71,3 +71,12 @@ Temporary place for uncategorized items
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
 
 ```
+
+- To map a custom content type to a PHP template file (tpl.php) us:
+```
+node--[content-type].tpl.php
+page--[view-page-name].tpl.php
+
+Make sure to use 2 dashes and use the machine readable name for the content types.
+Place them in the templates-folder of your theme.
+```
