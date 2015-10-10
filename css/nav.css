@@ -8,7 +8,7 @@ effect the navigation bar.
 Notes:
 Using .navbar-default (a standard
 bootstrap element) for the RCL header
-portion. 
+portion.
 
 -------------------------------*/
 
@@ -36,7 +36,7 @@ portion.
 
 
 /* Search box grow on focus */
-.navbar-search-grow, .form-control {
+.navbar-search-grow, .navbar .form-control {
     width: 70px;
     -webkit-transition: width 0.5s ease-in-out;
     -moz-transition:width 0.5s ease-in-out;
@@ -63,8 +63,10 @@ portion.
 
 .navbar {border: none;}
 
+/* Size and positioning for the
+RCL Logo */
 .navbar-brand img {
-    width: 215px;
+    width: 250px;
     height: auto;
     position: relative;
     bottom: 3px;
@@ -186,10 +188,16 @@ NAVBAR >> SEARCH BOX
   color: #c4dbff;
 }
 
+/* Removing padding from the searchbox.
+It was adding accessive padding-right. */
+.navbar-form {
+  padding: 0;
+}
+
 /* Better style for search box on mobile */
 @media (max-width: 760px) {
   input.form-control.navbar-search-grow {
-      width: 95%;
+      width: 90%;
       margin: auto;
   }
 }

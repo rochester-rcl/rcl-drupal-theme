@@ -79,23 +79,26 @@
  <div class="container">
    <!-- UofR Logo -->
    <a class="" href="#">
-     <img class="navbar-brand-uofr-logo" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-uofr.png" />
+     <img class="navbar-brand-uofr-logo" alt="University of Rochester" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-uofr.png" />
    </a>
  </div>
 </div>
 
+
+
+<!-- Header  -->
 <header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <!-- If used uploads a custom logo-->
+      <!-- If user uploads a custom logo-->
       <?php if ($logo): ?>
       <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a>
       <?php endif; ?>
-      <!-- Default logo -->
+      <!-- If user does not upload a custom logo - print default logo -->
       <?php if (!empty($site_name)): ?>
-      <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img class="" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-rcl.png" />
+      <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img class="" alt="River Campus Libraries" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-rcl-blue.png" />
       </a>
       <?php endif; ?>
 
@@ -108,26 +111,44 @@
       </button>
     </div>
 
-    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse navbar-right">
+
+
+    <!-- Nav links -->
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">My Accounts</a></li>
+        <li><a href="#">Chat Online</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Giving</a></li>
+        <li>
+        <!-- Search box -->
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input class="form-control navbar-search-grow" placeholder="Search" title="Seach the Library website" type="text" name="firstname"/>
+            <!-- <span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span> -->
+            <!-- <input type="text" class="form-control navbar-search-grow" placeholder="Search"> -->
+
+          </div>
+          <!-- <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span></button> -->
+        </form>
+        </li>
+      </ul>
+    </div>
+
+      <!-- <div class="navbar-collapse collapse navbar-right">
         <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
         </nav>
-      </div>
-    <?php endif; ?>
+      </div> -->
+
+
+
   </div>
 </header>
+
+
+
+
+
 
 <div class="main-container container">
 
@@ -159,9 +180,7 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-      <?php endif; ?>
+
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
@@ -182,6 +201,13 @@
 
   </div>
 </div>
+
+<?php if (!empty($tabs)): ?>
+  <div class=" container tab-container">
+  <?php print render($tabs); ?>
+</div>
+<?php endif; ?>
+
 <footer class="footer container">
   <?php print render($page['footer']); ?>
 </footer>

@@ -9,6 +9,7 @@
  </div>
 </div>
 
+
 <!-- RCL navigation bar -->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -22,7 +23,7 @@
         </button>
         <!-- RCL Logo -->
         <a class="navbar-brand" href="#">
-          <img class="" src="<?php print $directory;?>/images/logo-rcl.png" />
+          <img class="" src="<?php print $directory;?>/images/logo-rcl-blue.png" />
         </a>
     </div>
     <!-- Nav links -->
@@ -49,7 +50,62 @@
   </div>
 </div>
 
+
+<!--  Vid background -->
+<video autoplay loop poster="" id="bgvid">
+<source src="<?php print $directory;?>/videos/rcl-bg-vid.webm" type="video/webm">
+</video>
+
+
+
+
+
+
+
+
 <!-- Content Begins -->
 <div class="main-container container">
   <?php print $messages; ?>
 </div>
+
+
+
+
+<!-- Script for video -->
+<script>
+var video = document.getElementById("bgvid"),
+pauseButton = document.querySelector("#polina button");
+
+function vidFade() {
+  video.classList.add("stopfade");
+}
+
+video.addEventListener('ended', function()
+{
+// only functional if "loop" is removed
+video.pause();
+vidFade();
+}, false);
+
+pauseButton.addEventListener("click", function() {
+  video.classList.toggle("stopfade");
+  if (video.paused) {
+    video.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    video.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+}, false);
+
+video.addEventListener('touchstart', function(e) {
+e.preventDefault();
+video.play();
+})
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-9896842-2', 'auto');
+  ga('send', 'pageview');
+</script>

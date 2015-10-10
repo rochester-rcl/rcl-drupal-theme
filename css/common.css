@@ -30,8 +30,10 @@ body {}
 
 
 
+
 /* OVERIDES
 -------------------------------*/
+
 
 /* Pushing the main content down to
 compensate for the fixed header.*/
@@ -42,3 +44,41 @@ compensate for the fixed header.*/
 .content {
     font-size: 17px;
 }
+
+
+
+
+/* ADMINIMAL MODULE CODE
+The following CSS code was written to
+specifically account for the admin
+menu from Adminimal Module. If you
+are not using that particular menu
+module then remove the following
+code until you reach "END OF AMINIMAL
+MENU MODULE CODE" */
+
+/* Fixing the header */
+.slicknav_menu{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+/* Prevents the  admin bar from
+hiding fixed headers (i.e..uofrbar)
+when logged-in */
+body.logged-in                      {margin-top: 20px;}
+.logged-in .uofrbar                 {top: 29px;       }
+body.logged-in .navbar-fixed-top    {top: 64px;       }
+
+/* Pushes the menu and page down to
+account for a thicker modile admin
+menu.  */
+@media screen and (max-width: 1024px){
+  body.logged-in                      {margin-top: 133px;}
+  .logged-in .uofrbar                 {top: 47px;       }
+  body.logged-in .navbar-fixed-top    {top: 82px;       }
+
+}
+/* --- /END OF AMINIMAL MENU MODULE CODE ---*/

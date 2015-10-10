@@ -80,3 +80,25 @@ page--[view-page-name].tpl.php
 Make sure to use 2 dashes and use the machine readable name for the content types.
 Place them in the templates-folder of your theme.
 ```
+
+- **Navigation PHP**: Place this into the page.tpl.php file to generate menu. Currently working on a new elseif statment that allows the user to override the default menu with the dynamic drupal one. Will remove this when that is complete.
+```
+<?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+  <div class="navbar-collapse collapse navbar-right">
+    <nav role="navigation">
+      <?php if (!empty($primary_nav)): ?>
+        <?php print render($primary_nav); ?>
+      <?php endif; ?>
+      <?php if (!empty($secondary_nav)): ?>
+        <?php print render($secondary_nav); ?>
+      <?php endif; ?>
+      <?php if (!empty($page['navigation'])): ?>
+        <?php print render($page['navigation']); ?>
+      <?php endif; ?>
+      <?php if (!empty($page['navigation'])): ?>
+        <?php print render($page['navigation']); ?>
+      <?php endif; ?>
+    </nav>
+  </div>
+<?php endif; ?>
+```
