@@ -19,5 +19,8 @@ sub-theme.
 /* 3. COLORS - Site colors */
 @import url("colors.css");
 
-/* 3. LANDING PAGE VIDEO - Site colors */
+/* 3. LANDING PAGE VIDEO s */
 @import url("landingpage-video.css");
+
+/* 4. EVENT PAGE  */
+@import url("event.css");

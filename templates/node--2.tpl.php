@@ -80,18 +80,21 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-<div>
-This is a bunch of stuff before the content!
+<div class="event-image-wrapper">
+<?php print render($content['field_event_cover_image']); ?>
 </div>
 
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+
+
+
+
+
+<!-- TITLE -->
+<?php if ($page): ?>
+  <?php if ($title): ?><header><h1 id="page-title"><?php print $title; ?></h1></header><?php endif; ?>
+<?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
@@ -106,8 +109,6 @@ This is a bunch of stuff before the content!
 
 
 
-  <?php print render($content['links']); ?>
 
-  <?php print render($content['comments']); ?>
 
 </div>

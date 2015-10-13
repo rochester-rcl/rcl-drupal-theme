@@ -1,0 +1,16 @@
+
+
+/*.event-image-wrapper{
+  margin-top: 40%;
+}*/
+
+.field.field-name-field-event-cover-image.field-type-image img{
+  width: 100%;
+  height: auto;
+}
+
+/* Removing the page title that is rendered
+by the page.tpl.php file. */
+h1.page-header {
+    display: none;
+}

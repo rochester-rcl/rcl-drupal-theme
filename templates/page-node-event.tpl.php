@@ -116,7 +116,7 @@
     <!-- Nav links -->
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">My Accounts</a></li>
+        <li><a href="#">43534My Accounts</a></li>
         <li><a href="#">Chat Online</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Giving</a></li>
@@ -150,7 +150,7 @@
 
 
 <div class="main-container container">
-
+YO!!!!! THIS IS A CUSTOM PAGE type
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
       <p class="lead">Site slogan</p>

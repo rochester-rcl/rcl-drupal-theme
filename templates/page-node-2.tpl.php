@@ -116,7 +116,7 @@
     <!-- Nav links -->
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">My Accounts</a></li>
+        <li><a href="#">222My Accounts</a></li>
         <li><a href="#">Chat Online</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Giving</a></li>

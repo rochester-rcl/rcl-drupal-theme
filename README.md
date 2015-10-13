@@ -63,6 +63,10 @@ If you add images into the theme you must use the correct php based path and pla
 ### Known Issues
 - Admin bar can be buggy on mobile
 
+
+### Drupal Configuration Requirements
+- After login trigger must be in place to take them to "/staff-login" or the page they were intending to be sent prior to login state. (*Looking into possible modules for this as well.*)
+
 ### Other
 Temporary place for uncategorized items
 
