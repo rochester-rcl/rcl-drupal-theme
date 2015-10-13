@@ -1,7 +1,9 @@
 <?php
 /**
  * @file
- * Default theme implementation to display a single Drupal page.
+ * -----------------------------
+ *  EVENT CONTENT TYPE PAGE TEMPLATE
+ * -----------------------------
  *
  * The doctype, html, head and body tags are not in this template. Instead they
  * can be found in the html.tpl.php template in this directory.
@@ -116,7 +118,7 @@
     <!-- Nav links -->
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">222My Accounts</a></li>
+        <li><a href="#">43534My Accounts</a></li>
         <li><a href="#">Chat Online</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Giving</a></li>
@@ -150,7 +152,7 @@
 
 
 <div class="main-container container">
-
+HEYYYY NOWW!!! This is the page tpl that targets all events
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
       <p class="lead">Site slogan</p>
