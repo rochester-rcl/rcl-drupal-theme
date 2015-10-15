@@ -81,25 +81,44 @@
  */
 ?>
 
-<div class="event-image-wrapper">
-  <?php print render($content['field_event_cover_image']); ?>
-</div>
 
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+  <div class="">
+    <?php print render($content['field_event_cover_image']); ?>
+  </div>
 
-  <!-- TITLE -->
-  <?php if ($page): ?>
-    <?php if ($title): ?><header><h1 id="page-title"><?php print $title; ?></h1></header><?php endif; ?>
-  <?php endif; ?>
 
-  <div class="content"<?php print $content_attributes; ?>>
+
+
+<div class="main-container container">
+
+  <div class="row content event-image-push"<?php print $content_attributes; ?>>
+
+    <div class="register-button ">
+      <?php print render($content['field_register']); ?>
+    </div>
+
+    <?php if ($page): ?>
+      <?php if ($title): ?><header><h1 class="event-title"><?php print $title; ?></h1></header><?php endif; ?>
+    <?php endif; ?>
+
+    <div class="event-tagline">
+      <?php print render($content['field_event_tagline']); ?>
+    </div>
+
+    <div class="event-date">
+      <?php print render($content['field_event_dates']); ?>
+    </div>
+
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
       hide($content['field_event_cover_image']);
+      hide($content['field_event_tagline']);
       print render($content);
     ?>
-  </div>
 
+
+
+  </div>
 </div>

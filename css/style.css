@@ -24,3 +24,6 @@ sub-theme.
 
 /* 4. EVENT PAGE  */
 @import url("event.css");
+
+/* 4. ADMIN EDITING SCREENS */
+@import url("editing.css");

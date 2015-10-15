@@ -22,7 +22,8 @@ html {
 
 /*div{outline: 1px solid red}*/
 
-body {}
+body {
+}
 * {
   margin:0;
   padding:0;
@@ -58,27 +59,27 @@ code until you reach "END OF AMINIMAL
 MENU MODULE CODE" */
 
 /* Fixing the header */
-.slicknav_menu{
+/*.slicknav_menu{
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2000;
-}
+}*/
 
 /* Prevents the  admin bar from
 hiding fixed headers (i.e..uofrbar)
 when logged-in */
-body.logged-in                      {margin-top: 20px;}
+/*body.logged-in                      {margin-top: 19px;}
 .logged-in .uofrbar                 {top: 29px;       }
-body.logged-in .navbar-fixed-top    {top: 64px;       }
+body.logged-in .navbar-fixed-top    {top: 64px;       }*/
 
 /* Pushes the menu and page down to
 account for a thicker modile admin
 menu.  */
-@media screen and (max-width: 1024px){
+/*@media screen and (max-width: 1024px){
   body.logged-in                      {margin-top: 133px;}
   .logged-in .uofrbar                 {top: 47px;       }
   body.logged-in .navbar-fixed-top    {top: 82px;       }
 
-}
+}*/
 /* --- /END OF AMINIMAL MENU MODULE CODE ---*/

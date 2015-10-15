@@ -2,7 +2,7 @@
 /**
  * @file
  * -----------------------------
- *  EVENT CONTENT TYPE PAGE TEMPLATE
+ *  EDIT EVENT TYPE TEMPLATE
  * -----------------------------
  *
  * The doctype, html, head and body tags are not in this template. Instead they
@@ -76,6 +76,7 @@
  */
 ?>
 
+
 <!-- UofR bar -->
 <div class="uofrbar">
  <div class="container">
@@ -86,7 +87,9 @@
  </div>
 </div>
 
-<!-- RCL Header / Nav  -->
+
+
+<!-- Header  -->
 <header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -140,8 +143,6 @@
         </nav>
       </div> -->
 
-
-
   </div>
 </header>
 
@@ -149,7 +150,16 @@
 
 
 
-<div class="">
+
+
+<div class="main-container container">
+
+  <?php if (!empty($tabs)): ?>
+    <div class=" container tab-container">
+    <?php print render($tabs); ?>
+  </div>
+  <?php endif; ?>
+
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
       <p class="lead">Site slogan</p>
@@ -160,7 +170,7 @@
 
 
 
-  <div class="">
+  <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3" role="complementary">
@@ -185,25 +195,14 @@
       <?php endif; ?>
 
       <?php print render($page['content']); ?>
-
-
-
     </section>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
 
   </div>
 </div>
 
-<?php if (!empty($tabs)): ?>
-  <div class="container tab-container fixed-bottom">
-  <?php print render($tabs); ?>
-</div>
-<?php endif; ?>
+
+
 
 <footer class="footer container">
   <?php print render($page['footer']); ?>

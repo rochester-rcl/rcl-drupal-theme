@@ -1,16 +1,103 @@
 
 
 /*.event-image-wrapper{
-  margin-top: 40%;
+  position: absolute;
+  top: 0;
+
 }*/
+
+
+
+
+/*.field.field-name-field-register.field-type-link-field.field-label-hidden {
+    background-color: black;
+    padding: 10px 16px;
+    color: #fff;
+}*/
+
+
+
+
+
+
+.event-date {
+    font-size: 22px;
+    margin-bottom: 31px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 21px;
+}
+
+.date-display-range {
+    font-size: 19px;
+    display: inline;
+    color: gray;
+}
+.img-responsive img{}
+
+/* Overides the large button size
+*/
+.register-button .btn-lg {
+    padding: 16px 56px;
+    font-size: 18px;
+    background-color: #fed100;
+    color: #FFF;
+}
+
+.register-button {
+  top: 560px;
+  position: absolute;
+}
 
 .field.field-name-field-event-cover-image.field-type-image img{
   width: 100%;
   height: auto;
+  clip: rect(0px,5000px,560px,0px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:80px;
+  z-index: -100;
 }
 
-/* Removing the page title that is rendered
-by the page.tpl.php file. */
-h1.page-header {
-    display: none;
+
+.event-image-push{
+  margin-top: 550px;
+}
+
+.event-title {
+  font-size: 70px;
+}
+
+.event-tagline{
+  font-size: 20px;
+  display: block;
+  color: gray;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 890px) {
+  .event-image-push{margin-top: 70%;}
+  .event-title {font-size: 45px;}
+  .register-button .btn-lg{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: none;
+    border-radius: 0;
+}
+  }
+  .field.field-name-field-event-cover-image.field-type-image img{
+    width: 100%;
+    height: auto;
+    clip: rect(0px,5000px,560px,0px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:80px;
+    z-index: -100;
+  }
 }

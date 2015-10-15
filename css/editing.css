@@ -1,0 +1,23 @@
+
+
+
+
+input#edit-title {
+  font-size: 40px;
+  height: 66px;
+}
+
+
+
+#edit-field-register
+ {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px;
+    background-color: #fff9dd;
+}
+
+.cke_editable {
+    font-size: 18px;
+    line-height: 1.3;
+}
