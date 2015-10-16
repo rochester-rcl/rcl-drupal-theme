@@ -122,3 +122,4 @@
 
   </div>
 </div>
+<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/node-event.js'; ?>"></script>

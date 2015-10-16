@@ -56,6 +56,13 @@ portion.
   color: #c4dbff;
 }
 
+/* Chat Online/Offline Toggle */
+
+.chat-offline{
+  cursor: default;
+  color: #546f99!important;
+
+}
 
 
 /* OVERIDES

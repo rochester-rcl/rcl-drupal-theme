@@ -1,4 +1,8 @@
 <?php
+$date = new DateTime();
+$timestamp = $date->getTimestamp();
+$chat_status =  file_get_contents('http://us.libraryh3lp.com/presence/jid/urhomepage1/chat.libraryh3lp.com/text?'. $timestamp);
+
 /**
  * @file
  * -----------------------------
@@ -76,6 +80,9 @@
  */
 ?>
 
+
+
+
 <!-- UofR bar -->
 <div class="uofrbar">
  <div class="container">
@@ -113,11 +120,12 @@
 
 
 
+
     <!-- Nav links -->
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">My Accounts</a></li>
-        <li><a href="#">Chat Online</a></li>
+        <li><a href="#" data-chat-status="<?php print $chat_status;?>" class="chat-toggle"></a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Giving</a></li>
         <li>
@@ -144,7 +152,6 @@
 
   </div>
 </header>
-
 
 
 
@@ -184,8 +191,15 @@
         <?php print render($page['help']); ?>
       <?php endif; ?>
 
-      <?php print render($page['content']); ?>
 
+
+
+      <?php print render($page['content']); ?>
+      <?php if (!empty($tabs)): ?>
+        <div class="container tab-container fixed-bottom">
+        <?php print render($tabs); ?>
+      </div>
+      <?php endif; ?>
 
 
     </section>
@@ -199,12 +213,9 @@
   </div>
 </div>
 
-<?php if (!empty($tabs)): ?>
-  <div class="container tab-container fixed-bottom">
-  <?php print render($tabs); ?>
-</div>
-<?php endif; ?>
+
 
 <footer class="footer container">
   <?php print render($page['footer']); ?>
 </footer>
+<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/chat.js'; ?>"></script>
