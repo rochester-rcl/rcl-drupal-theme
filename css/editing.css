@@ -7,7 +7,14 @@ input#edit-title {
   height: 66px;
 }
 
-
+/* Event Cover Image Field */
+div#edit-field-event-cover-image {
+    /* border: 1px solid; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px;
+    /* background-color: #ddd; */
+}
 
 #edit-field-register
  {

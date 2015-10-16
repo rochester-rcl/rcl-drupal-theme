@@ -18,6 +18,12 @@ portion.
 /* CUSTOM STYLES
 -------------------------------*/
 
+/* Javacript Transitions */
+.uofrbar {
+
+}
+
+
 /* UofR bar  */
 .uofrbar {
   background-color: #021e47;
@@ -25,9 +31,14 @@ portion.
   height: 35px;
   padding: 5px;
   position: fixed;
-  top: 0;
   z-index: 1000;
+  top: 0;
+  }
+  .uofrbar.up     {
+  top:-35px;
 }
+
+
 /* UofR logo in navbar */
 .navbar-brand-uofr-logo{
   width: 210px;
@@ -89,6 +100,7 @@ RCL Logo */
   top: 35px;
   border-width: 0 0 1px;
 }
+.navbar-fixed-top.up { top: 0;}
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;

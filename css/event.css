@@ -22,6 +22,7 @@
   color: white;
   border: none;
   padding: 10px 16px;
+  z-index: 300;
   /*border: 1px solid gray;*/
 }
 
@@ -48,11 +49,16 @@
     font-size: 18px;
     background-color: #fed100;
     color: #FFF;
+    border: none;
+}
+.register-button .btn-lg:hover {
+    background-color: #fed100;
 }
 
 .register-button {
   top: 560px;
   position: absolute;
+  z-index: 300;
 }
 
 .field.field-name-field-event-cover-image.field-type-image img{
