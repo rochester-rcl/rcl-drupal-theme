@@ -74,6 +74,14 @@
  */
 ?>
 
+<!--=========  HEADER   ==========-->
+<!-- Chat Online/Offline Toggle -->
+<?php
+  $date = new DateTime();
+  $timestamp = $date->getTimestamp();
+  $chat_status =  file_get_contents('http://us.libraryh3lp.com/presence/jid/urhomepage1/chat.libraryh3lp.com/text?'. $timestamp);
+?>
+
 <!-- UofR bar -->
 <div class="uofrbar">
  <div class="container">
@@ -83,10 +91,7 @@
    </a>
  </div>
 </div>
-
-
-
-<!-- Header  -->
+<!-- RCL Header / Nav  -->
 <header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -101,7 +106,6 @@
       <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img class="" alt="River Campus Libraries" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-rcl-blue.png" />
       </a>
       <?php endif; ?>
-
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -110,40 +114,27 @@
         <span class="icon-bar"></span>
       </button>
     </div>
-
-
-
     <!-- Nav links -->
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">My Accounts</a></li>
-        <li><a href="#">Chat Online</a></li>
+        <li><a href="#" data-chat-status="<?php print $chat_status;?>" class="chat-toggle"></a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Giving</a></li>
         <li>
-        <!-- Search box -->
+        <!-- Nav Search box -->
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
             <input class="form-control navbar-search-grow" placeholder="Search" title="Seach the Library website" type="text" name="firstname"/>
-            <!-- <span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span> -->
-            <!-- <input type="text" class="form-control navbar-search-grow" placeholder="Search"> -->
-
           </div>
           <!-- <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span></button> -->
         </form>
         </li>
       </ul>
     </div>
-
-      <!-- <div class="navbar-collapse collapse navbar-right">
-        <nav role="navigation">
-        </nav>
-      </div> -->
-
-
-
   </div>
 </header>
+<!--======= /HEADER  ========-->
 
 
 
@@ -210,6 +201,12 @@
 </div>
 <?php endif; ?>
 
+<!--===== FOOTER =====-->
 <footer class="footer container">
   <?php print render($page['footer']); ?>
 </footer>
+
+
+
+<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/chat.js'; ?>"></script>
+<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/nav.js'; ?>"></script>

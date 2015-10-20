@@ -27,18 +27,24 @@
 }
 
 
+.event-location{
+  display: -webkit-box;
+}
 
 .event-date {
-    font-size: 22px;
-    margin-bottom: 31px;
-    border-bottom: 1px solid #E5E5E5;
-    padding-bottom: 21px;
+  font-size: 22px;
 }
 
 .date-display-range {
     font-size: 19px;
     display: inline;
     color: gray;
+}
+
+.field.field-name-body.field-type-text-with-summary {
+    margin-top: 20px;
+    border-top: 1px solid #E5E5E5;
+    padding-top: 20px;
 }
 .img-responsive img{}
 
@@ -72,7 +78,6 @@
   z-index: -100;
 }
 
-
 .event-image-push{
   margin-top: 550px;
 }
@@ -90,7 +95,7 @@
   margin-bottom: 25px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 768px) {
   .event-image-push{margin-top: 70%;}
   .event-title {font-size: 45px;}
   .no-registration-button {

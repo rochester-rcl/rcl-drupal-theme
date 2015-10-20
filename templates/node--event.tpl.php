@@ -81,33 +81,43 @@
  */
 ?>
 
-
-  <div class="">
-    <?php print render($content['field_event_cover_image']); ?>
-  </div>
-
-
-
+<!--==== EVENT IMAGE  ====-->
+<div class="">
+  <?php print render($content['field_event_cover_image']); ?>
+</div>
 
 <div class="main-container container">
-
   <div class="row content event-image-push"<?php print $content_attributes; ?>>
-
     <div class="register-button ">
       <?php print render($content['field_register']); ?>
     </div>
-
     <?php if ($page): ?>
       <?php if ($title): ?><header><h1 class="event-title"><?php print $title; ?></h1></header><?php endif; ?>
     <?php endif; ?>
-
+    <!-- Tagline -->
     <div class="event-tagline">
       <?php print render($content['field_event_tagline']); ?>
     </div>
 
-    <div class="event-date">
-      <?php print render($content['field_event_dates']); ?>
+   <div class="row">
+     <div class="col-md-6">
+        <!-- Date -->
+        <div class="event-date">
+          <?php print render($content['field_event_dates']); ?>
+        </div>
     </div>
+    <div class="col-md-6">
+      <!-- Location -->
+      <?php if ($page): ?>
+        <?php if ($content['field_location']): ?>
+          <div class="event-location">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+            <?php print render($content['field_location']); ?>
+          </div>
+        <?php endif; ?>
+      <?php endif; ?>
+    </div>
+  </div>
 
     <?php
       // We hide the comments and links now so that we can render them later.
@@ -117,9 +127,10 @@
       hide($content['field_event_tagline']);
       print render($content);
     ?>
-
-
-
   </div>
 </div>
+
+<!-- Changes button to read as message
+if no link added to register-button
+field on admin form -->
 <script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/node-event.js'; ?>"></script>

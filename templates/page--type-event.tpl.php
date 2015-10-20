@@ -100,6 +100,7 @@
   $timestamp = $date->getTimestamp();
   $chat_status =  file_get_contents('http://us.libraryh3lp.com/presence/jid/urhomepage1/chat.libraryh3lp.com/text?'. $timestamp);
 ?>
+
 <!-- UofR bar -->
 <div class="uofrbar">
  <div class="container">
@@ -165,18 +166,21 @@
       <!-- Title removed. Printed on the node tpl -->
       <?php print render($title_suffix); ?>
       <!-- ALERT MESSAGES -->
+      <div class="messages-overlay">
       <?php print $messages; ?>
+      </div>
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
       <?php print render($page['content']); ?>
+    </section>
+    <section>
       <?php if (!empty($tabs)): ?>
-        <div class="container tab-container fixed-bottom">
+        <div class="container tab-container">
         <?php print render($tabs); ?>
       </div>
       <?php endif; ?>
     </section>
-
     <?php if (!empty($page['sidebar_second'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_second']); ?>
@@ -187,9 +191,11 @@
 </div>
 
 
-
+<!--===== FOOTER =====-->
 <footer class="footer container">
   <?php print render($page['footer']); ?>
 </footer>
+
+
 <script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/chat.js'; ?>"></script>
 <script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/nav.js'; ?>"></script>
