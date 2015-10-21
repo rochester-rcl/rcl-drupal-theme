@@ -1,0 +1,68 @@
+
+
+.article-image-push{
+  margin-top: 550px;
+}
+.article-date {
+  font-size: 15px;
+}
+
+
+.field.field-name-body.field-type-text-with-summary {
+    margin-top: 20px;
+    border-top: 1px solid #E5E5E5;
+    padding-top: 20px;
+}
+
+
+.field.field-name-field-article-cover-image.field-type-image img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  clip: rect(0px,5000px,560px,0px);
+  left: 0;
+  right: 0;
+  top:80px;
+  z-index: -100;
+}
+
+.article-image-push{
+  margin-top: 550px;
+}
+
+.event-title {
+  font-size: 70px;
+}
+
+.event-tagline{
+  font-size: 20px;
+  display: block;
+  color: gray;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .article-image-push{margin-top: 70%;}
+  .event-title {font-size: 45px;}
+  .no-registration-button {
+    position: fixed;
+    bottom: 0;
+    top:auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border: none;
+  }
+  .register-button .btn-lg{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: none;
+    border-radius: 0;
+    }
+
+  }
