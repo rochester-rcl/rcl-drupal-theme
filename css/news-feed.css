@@ -3,8 +3,20 @@
 
 
 
-
-.cover-image-thumb img {
+/* Making feed images responsive */
+.cover-image-thumb img, .article-cover-image-thumb img {
     width: 100%;
     height: auto;
+}
+
+.news-events-thumb-row {
+    border: 1px solid lightgray;
+    margin: 10px;
+    width: 48%;
+    float: left;
+    padding: 10px;
+}
+
+.event-title-thumb {
+    font-size: 27px;
 }

@@ -90,22 +90,17 @@
   <div class="row content article-image-push"<?php print $content_attributes; ?>>
 
     <?php if ($page): ?>
-      <?php if ($title): ?><header><h1 class="event-title"><?php print $title; ?></h1></header><?php endif; ?>
+      <?php if ($title): ?><header><h1 class="article-title"><?php print $title; ?></h1></header><?php endif; ?>
     <?php endif; ?>
     <!-- Tagline -->
-    <div class="event-tagline">
+    <div class="article-tagline">
       <?php print render($content['field_article_tagline']); ?>
     </div>
 
-   <div class="row">
-     <div class="col-md-6">
         <!-- Date -->
         <div class="article-date">
           <?php print render($content['field_article_date']); ?>
         </div>
-    </div>
-  </div>
-
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
@@ -120,4 +115,4 @@
 <!-- Changes button to read as message
 if no link added to register-button
 field on admin form -->
-<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/node-event.js'; ?>"></script>
+<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/node-article.js'; ?>"></script>

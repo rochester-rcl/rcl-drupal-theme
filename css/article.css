@@ -3,13 +3,18 @@
 .article-image-push{
   margin-top: 550px;
 }
+
+
 .article-date {
   font-size: 15px;
 }
 
+.field.field-name-field-tags.field-type-taxonomy-term-reference a{
+  display: inline-flex;
+}
 
 .field.field-name-body.field-type-text-with-summary {
-    margin-top: 20px;
+    margin-top: 50px;
     border-top: 1px solid #E5E5E5;
     padding-top: 20px;
 }
@@ -30,22 +35,21 @@
   margin-top: 550px;
 }
 
-.event-title {
+.article-title {
   font-size: 70px;
 }
 
-.event-tagline{
-  font-size: 20px;
+.article-tagline{
+  font-size: 25px;
   display: block;
+  font-weight: 200;
   color: gray;
-  border-bottom: 1px solid #E5E5E5;
-  padding-bottom: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
   .article-image-push{margin-top: 70%;}
-  .event-title {font-size: 45px;}
+  .article-title {font-size: 45px;}
   .no-registration-button {
     position: fixed;
     bottom: 0;

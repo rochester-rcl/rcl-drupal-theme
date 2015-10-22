@@ -117,16 +117,17 @@
     <!-- Nav links -->
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">My Accounts</a></li>
-        <li><a href="#" data-chat-status="<?php print $chat_status;?>" class="chat-toggle"></a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Giving</a></li>
+        <li><a href="http://catalog.lib.rochester.edu/vwebv/myAccount">My Accounts</a></li>
+        <li><a href="http://www.library.rochester.edu/files/chat/chat.php" onclick="window.open(this.href, 'mywindowtitle','width=300,height=500'); return false" target="_blank" data-chat-status="<?php print $chat_status;?>" class="chat-toggle"></a></li>
+        <li><a href="http://www.library.rochester.edu/contact-us">Contact</a></li>
+        <li><a href="http://www.library.rochester.edu/giving">Giving</a></li>
         <li>
         <!-- Nav Search box -->
-        <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-            <input class="form-control navbar-search-grow" placeholder="Search" title="Seach the Library website" type="text" name="firstname"/>
-          </div>
+          <form class="navbar-form navbar-left" name="sitesearch" action="http://www.library.rochester.edu/site-search" method="get">
+            <div class="form-group">
+              <input class="form-control navbar-search-grow" type="text" name="search"  placeholder="Search" title="Seach the Library website">
+              </div>
+          </form>
           <!-- <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span></button> -->
         </form>
         </li>
@@ -135,6 +136,7 @@
   </div>
 </header>
 <!--======= /HEADER  ========-->
+
 
 
 
