@@ -1,10 +1,8 @@
 <?php
-
-
 /**
  * @file
  * -----------------------------
- *  EVENT CONTENT TYPE PAGE TEMPLATE
+ *  EDIT EVENT TYPE TEMPLATE
  * -----------------------------
  *
  * The doctype, html, head and body tags are not in this template. Instead they
@@ -78,16 +76,6 @@
  */
 ?>
 
-
-
-<!--=========  HEADER   ==========-->
-<!-- Chat Online/Offline Toggle -->
-<?php
-  $date = new DateTime();
-  $timestamp = $date->getTimestamp();
-  $chat_status =  file_get_contents('http://us.libraryh3lp.com/presence/jid/urhomepage1/chat.libraryh3lp.com/text?'. $timestamp);
-?>
-
 <!-- UofR bar -->
 <div class="uofrbar">
  <div class="container">
@@ -97,7 +85,10 @@
    </a>
  </div>
 </div>
-<!-- RCL Header / Nav  -->
+
+
+
+<!-- Header  -->
 <header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -112,6 +103,7 @@
       <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img class="" alt="River Campus Libraries" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-rcl-blue.png" />
       </a>
       <?php endif; ?>
+
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -120,68 +112,96 @@
         <span class="icon-bar"></span>
       </button>
     </div>
+
+
+
     <!-- Nav links -->
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://catalog.lib.rochester.edu/vwebv/myAccount">My Accounts</a></li>
-        <li><a href="http://www.library.rochester.edu/files/chat/chat.php" onclick="window.open(this.href, 'mywindowtitle','width=300,height=500'); return false" target="_blank" data-chat-status="<?php print $chat_status;?>" class="chat-toggle"></a></li>
-        <li><a href="http://www.library.rochester.edu/contact-us">Contact</a></li>
-        <li><a href="http://www.library.rochester.edu/giving">Giving</a></li>
+        <li><a href="#">My Accounts</a></li>
+        <li><a href="#">Chat Online</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Giving</a></li>
         <li>
-        <!-- Nav Search box -->
-          <form class="navbar-form navbar-left" name="sitesearch" action="http://www.library.rochester.edu/site-search" method="get">
-            <div class="form-group">
-              <input class="form-control navbar-search-grow" type="text" name="search"  placeholder="Search" title="Seach the Library website">
-              </div>
-          </form>
+        <!-- Search box -->
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input class="form-control navbar-search-grow" placeholder="Search" title="Seach the Library website" type="text" name="firstname"/>
+            <!-- <span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span> -->
+            <!-- <input type="text" class="form-control navbar-search-grow" placeholder="Search"> -->
+
+          </div>
           <!-- <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search nav-search-icon" aria-hidden="true"></span></button> -->
         </form>
         </li>
       </ul>
     </div>
+
+      <!-- <div class="navbar-collapse collapse navbar-right">
+        <nav role="navigation">
+        </nav>
+      </div> -->
+
   </div>
 </header>
-<!--======= /HEADER  ========-->
 
 
 
+
+
+
+<div class="main-container container">
+
+  <?php if (!empty($tabs)): ?>
+    <div class=" container tab-container">
+    <?php print render($tabs); ?>
+  </div>
+  <?php endif; ?>
+
+  <header role="banner" id="page-header">
+    <?php if (!empty($site_slogan)): ?>
+      <p class="lead">Site slogan</p>
+    <?php endif; ?>
+
+    <?php print render($page['header']); ?>
+  </header> <!-- /#page-header -->
+
+HE THIS IS READING THE PAGE___EDIT____TPL
+
+  <div class="row">
+
+    <?php if (!empty($page['sidebar_first'])): ?>
+      <aside class="col-sm-3" role="complementary">
+        <?php print render($page['sidebar_first']); ?>
+      </aside>  <!-- /#sidebar-first -->
+    <?php endif; ?>
 
     <section<?php print $content_column_class; ?>>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+
       <a id="main-content"></a>
       <?php print render($title_prefix);?>
+
       <!-- Title removed. Printed on the node tpl -->
+
       <?php print render($title_suffix); ?>
+
       <!-- ALERT MESSAGES -->
-      <div class="messages-overlay">
       <?php print $messages; ?>
-      </div>
+
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
+
       <?php print render($page['content']); ?>
     </section>
-    <section>
-      <?php if (!empty($tabs)): ?>
-        <div class="container tab-container">
-        <?php print render($tabs); ?>
-      </div>
-      <?php endif; ?>
-    </section>
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
+
+
+  </div>
+</div>
 
 
 
 
-<!--===== FOOTER =====-->
 <footer class="footer container">
   <?php print render($page['footer']); ?>
 </footer>
-
-
-<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/chat.js'; ?>"></script>
-<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/nav.js'; ?>"></script>

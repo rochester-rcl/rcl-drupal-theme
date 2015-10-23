@@ -9,15 +9,12 @@
   font-size: 15px;
 }
 
-.field.field-name-field-tags.field-type-taxonomy-term-reference a{
-  display: inline-flex;
-}
 
-.field.field-name-body.field-type-text-with-summary {
+/*.field.field-name-body.field-type-text-with-summary {
     margin-top: 50px;
     border-top: 1px solid #E5E5E5;
     padding-top: 20px;
-}
+}*/
 
 
 .field.field-name-field-article-cover-image.field-type-image img{
@@ -29,10 +26,6 @@
   right: 0;
   top:80px;
   z-index: -100;
-}
-
-.article-image-push{
-  margin-top: 550px;
 }
 
 .article-title {
@@ -50,23 +43,5 @@
 @media (max-width: 768px) {
   .article-image-push{margin-top: 70%;}
   .article-title {font-size: 45px;}
-  .no-registration-button {
-    position: fixed;
-    bottom: 0;
-    top:auto;
-    left: 0;
-    right: 0;
-    width: 100%;
-    border: none;
-  }
-  .register-button .btn-lg{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: none;
-    border-radius: 0;
-    }
 
   }

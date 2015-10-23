@@ -72,24 +72,25 @@
 
 
 
-<!-- <div class="under-constuction">
-  <div class="jumboton">
-    <h1>Lam Square Website</h1>
-    <h4>Under Construction. Will be launching soon.</h4>
-  </div>
-</div> -->
 
 
 <div class="under-const-bg-image">
 <!-- Content Begins -->
 <div class="main-container container">
   <?php print $messages; ?>
-  <div class="jumbotron">
-    <h1>Lam Square Website</h1>
-    <p>Under Construction. Launching soon.</p>
+  <div class="hp-cover">
+    <img src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/lam-square-hp-bg.jpg" />
   </div>
+
 </div>
-<div>
+</div>
+<div class="hp-content-feed">
+  <div class="under-cons-message">
+  <?php print render($page['news']);?>
+  <h4>Check back for more updates!</h4>
+</div>
+
+</div>
 
 
 

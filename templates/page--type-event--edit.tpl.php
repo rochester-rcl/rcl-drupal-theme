@@ -76,7 +76,6 @@
  */
 ?>
 
-
 <!-- UofR bar -->
 <div class="uofrbar">
  <div class="container">
@@ -151,7 +150,6 @@
 
 
 
-
 <div class="main-container container">
 
   <?php if (!empty($tabs)): ?>
@@ -167,8 +165,6 @@
 
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
-
-
 
   <div class="row">
 

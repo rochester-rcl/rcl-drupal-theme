@@ -29,7 +29,14 @@ Allows you to display dynamic content via the database.
 WYSIWYG text editor. **Installation:**
   1. First [download the module](https://www.drupal.org/project/ckeditor) and Install
   2. Then [download the **Full Package** package](http://ckeditor.com/download)
-  3. Unzip the file and empty all files inside the folder to **modules » ckeditor » ckeditor** folder.
+    - Plugins
+      - [Auto Embed](http://ckeditor.com/addon/autoembed)
+      - [Media Embed](http://ckeditor.com/addon/embed)
+      - [Enhanced Image](http://ckeditor.com/addon/image2)
+      - [Semantic Media Embed](http://ckeditor.com/addon/embedsemantic)
+    - Skin
+      - [BootstrapCK4](http://ckeditor.com/addon/bootstrapck)
+  3. Move unziped **ckeditor** folder into: **sites » all » libraries** folder. Note: If there is no **libraries** folder then create one.
   4. Go to **Administration » Modules** and enable.
 
 
