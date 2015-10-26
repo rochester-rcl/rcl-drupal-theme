@@ -57,7 +57,7 @@ function rcl_drupal_theme_preprocess_page(&$vars) {
     // - page--node--%.tpl.php
     // - page--node--123.tpl.php
     // - page--node--edit.tpl.php
-    // - page--type-blog.tpl.php          << this is what you want.
+    // - page--type-blog.tpl.php
     // - page--type-blog--%.tpl.php
     // - page--type-blog--123.tpl.php
     // - page--type-blog--edit.tpl.php

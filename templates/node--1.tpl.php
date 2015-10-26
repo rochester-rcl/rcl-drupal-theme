@@ -2,7 +2,9 @@
 
 /**
  * @file
- * Default theme implementation to display a node.
+ * -----------------------------
+ *  Special Template for CSRC main page
+ * -----------------------------
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -80,34 +82,55 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-<div>
-This is a bunch of stuff before the content!
+<!--==== EVENT IMAGE  ====-->
+<div class="">
+  <?php print render($content['field_event_cover_image']); ?>
 </div>
 
+<div class="main-container container">
+  <div class="row content event-image-push"<?php print $content_attributes; ?>>
+    <div class="register-button ">
+      <?php print render($content['field_register']); ?>
+    </div>
+    <?php if ($page): ?>
+      <?php if ($title): ?><header><h1 class="event-title"><?php print $title; ?></h1></header><?php endif; ?>
+    <?php endif; ?>
+    <!-- Tagline -->
+    <div class="event-tagline">
+      <?php print render($content['field_event_tagline']); ?>
+    </div>
 
-  <div class="content"<?php print $content_attributes; ?>>
+   <div class="row">
+     <div class="col-md-6">
+        <!-- Date -->
+        <div class="event-date">
+          <?php print render($content['field_event_dates']); ?>
+        </div>
+    </div>
+    <div class="col-md-6">
+      <!-- Location -->
+      <?php if ($page): ?>
+          <div class="event-location">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+            <?php print render($content['field_location']); ?>
+          </div>
+      <?php endif; ?>
+    </div>
+  </div>
+
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
       hide($content['field_event_cover_image']);
+      hide($content['field_event_tagline']);
       print render($content);
     ?>
   </div>
-
-
-
-
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
-
 </div>
+
+<!-- Changes button to read as message
+if no link added to register-button
+field on admin form -->
+<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/node-event.js'; ?>"></script>

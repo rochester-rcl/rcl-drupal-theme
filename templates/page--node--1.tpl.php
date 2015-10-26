@@ -1,7 +1,11 @@
 <?php
+
+
 /**
  * @file
- * Default theme implementation to display a single Drupal page.
+ * -----------------------------
+ *  Special Template for CSRC main page
+ * -----------------------------
  *
  * The doctype, html, head and body tags are not in this template. Instead they
  * can be found in the html.tpl.php template in this directory.
@@ -74,6 +78,20 @@
  */
 ?>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--=========  HEADER   ==========-->
 <!-- Chat Online/Offline Toggle -->
 <?php
@@ -82,15 +100,7 @@
   $chat_status =  file_get_contents('http://us.libraryh3lp.com/presence/jid/urhomepage1/chat.libraryh3lp.com/text?'. $timestamp);
 ?>
 
-<!-- UofR bar -->
-<div class="uofrbar">
- <div class="container">
-   <!-- UofR Logo -->
-   <a class="" href="#">
-     <img class="navbar-brand-uofr-logo" alt="University of Rochester" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-uofr.png" />
-   </a>
- </div>
-</div>
+
 <!-- RCL Header / Nav  -->
 <header id="navbar" role="banner" class="navbar navbar-default">
   <div class="container">
@@ -140,53 +150,30 @@
 
 
 
-
-
-<div class="main-container container">
-
-  <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead">Site slogan</p>
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
-
-
-
-  <div class="row">
-
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
-
+<div class="">
+  <div class="">
     <section<?php print $content_column_class; ?>>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
+      <?php print render($title_prefix);?>
+      <!-- Title removed. Printed on the node tpl -->
       <?php print render($title_suffix); ?>
+      <!-- ALERT MESSAGES -->
+      <div class="messages-overlay">
       <?php print $messages; ?>
-
+      </div>
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
-      <?php if (!empty($action_links)): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
       <?php print render($page['content']); ?>
-
-
-
     </section>
-
+    <section>
+      <?php if (!empty($tabs)): ?>
+        <div class="container tab-container">
+        <?php print render($tabs); ?>
+      </div>
+      <?php endif; ?>
+    </section>
     <?php if (!empty($page['sidebar_second'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_second']); ?>
@@ -197,17 +184,10 @@
 </div>
 
 
-<?php if (!empty($tabs)): ?>
-  <div class=" container tab-container">
-  <?php print render($tabs); ?>
-</div>
-<?php endif; ?>
-
 <!--===== FOOTER =====-->
 <footer class="footer container">
   <?php print render($page['footer']); ?>
 </footer>
-
 
 
 <script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/chat.js'; ?>"></script>
