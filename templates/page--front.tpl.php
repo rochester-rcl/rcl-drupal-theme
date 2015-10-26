@@ -86,8 +86,8 @@
 </div>
 <div class="hp-content-feed">
   <div class="under-cons-message">
-  <?php print render($page['news']);?>
-  <h4>Check back for more updates!</h4>
+   <!--php print render($page['news']) -->
+  <h4>Website coming soon.</h4>
 </div>
 
 </div>

@@ -3,6 +3,7 @@
 .under-cons-message{
   position: relative;
   bottom: 50px;
+  text-align: center;
 }
 
 .hp-cover img{
