@@ -45,14 +45,7 @@ div#edit-field-event-cover-image {
     background-color: #fff9dd;
 }
 
-.messages-overlay{
-  position: absolute;
-  top: 100px;
-  left: 0;
-  right: 0;
-  width: 80%;
-  margin: auto;
-}
+
 
 /* Pushing tabs on event
 edit screen down so not

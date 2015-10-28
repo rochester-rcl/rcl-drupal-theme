@@ -45,6 +45,15 @@ portion.
   height: auto;
 }
 
+/* Adds space to top of page after
+scroll nav transition */
+.nav-spacer{
+  display: none;
+}
+.nav-spacer.show{
+  display: block;
+  height: 50px;
+}
 
 /* Search box grow on focus */
 .navbar-search-grow, .navbar .form-control {
@@ -93,6 +102,9 @@ portion.
   .logged-in .navbar.fixed {
   top: 20px;
   }
+.navbar{
+  margin-bottom: 0;
+}
 
 /* Size and positioning for the
 RCL Logo */

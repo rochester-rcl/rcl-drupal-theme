@@ -29,7 +29,9 @@ body {
   padding:0;
 }
 
-
+/* Adds padding to general page.tpl.php
+files */
+.general-page-push{padding-top: 20px;}
 
 
 /* OVERIDES
@@ -38,14 +40,17 @@ body {
 
 /* Pushing the main content down to
 compensate for the fixed header.*/
-/*.main-container.container {
-    margin-top: 100px;
-}*/
+.main-container {margin-top: 0;}
+  .main-container.pushdown {margin-top: 50px}
 
-.content {
-    font-size: 17px;
+.content {font-size: 17px;}
+
+
+.messages-overlay{
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
 }
-
 
 
 

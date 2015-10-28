@@ -141,6 +141,8 @@
     </div>
   </div>
 </header>
+<!-- Adds a spacer so that once the JS switches nav to fixed the page doesn't jump -->
+<header class="nav-spacer"></header>
 <!--======= /HEADER  ========-->
 
 

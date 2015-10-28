@@ -1,7 +1,7 @@
 
 
 .article-image-push{
-  margin-top: 550px;
+  margin-top: 580px;
 }
 
 
@@ -24,7 +24,7 @@
   clip: rect(0px,5000px,560px,0px);
   left: 0;
   right: 0;
-  top:80px;
+  top:0;
   z-index: -100;
 }
 

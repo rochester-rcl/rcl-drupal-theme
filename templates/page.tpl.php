@@ -135,6 +135,8 @@
     </div>
   </div>
 </header>
+<!-- Adds a spacer so that once the JS switches nav to fixed the page doesn't jump -->
+<header class="nav-spacer"></header>
 <!--======= /HEADER  ========-->
 
 
@@ -142,7 +144,7 @@
 
 
 
-<div class="main-container container">
+<div class="main-container container general-page-push">
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
@@ -152,6 +154,11 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
+  <?php if (!empty($tabs)): ?>
+    <div class=" container tab-container">
+    <?php print render($tabs); ?>
+  </div>
+  <?php endif; ?>
 
 
   <div class="row">
@@ -197,11 +204,7 @@
 </div>
 
 
-<?php if (!empty($tabs)): ?>
-  <div class=" container tab-container">
-  <?php print render($tabs); ?>
-</div>
-<?php endif; ?>
+
 
 <!--===== FOOTER =====-->
 <footer class="footer container">
