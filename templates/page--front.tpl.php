@@ -18,7 +18,7 @@
  </div>
 </div>
 <!-- RCL Header / Nav  -->
-<header id="navbar" role="banner" class="navbar navbar-default">
+<header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <!-- If user uploads a custom logo-->
