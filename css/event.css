@@ -62,7 +62,7 @@
 }
 
 .register-button {
-  top: 485px;
+  top: 560px;
   position: absolute;
   z-index: 300;
 }
@@ -74,12 +74,12 @@
   position: absolute;
   left: 0;
   right: 0;
-  top:0;
+  top:80px;
   z-index: -100;
 }
 
 .event-image-push{
-  margin-top: 580px;
+  margin-top: 550px;
 }
 
 .event-title {
@@ -118,5 +118,14 @@
     }
 
   }
-
+  .field.field-name-field-event-cover-image.field-type-image img{
+    width: 100%;
+    height: auto;
+    clip: rect(0px,5000px,560px,0px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:80px;
+    z-index: -100;
+  }
 }
