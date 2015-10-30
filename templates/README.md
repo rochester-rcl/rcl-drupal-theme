@@ -28,3 +28,12 @@ You can use the following naming conventions for your TPL files and drupal will 
 
 
 For more detail on this check out [Drupal 7 Template (Theme Hook) Suggestions](https://www.drupal.org/node/1089656)
+
+
+
+## Adding to the Templates
+
+If you add images into the theme you must use the correct php based path and place your image into the **images** folder.
+```
+<img class="" src="<?php print $directory;?>/images/<filename>" />
+```

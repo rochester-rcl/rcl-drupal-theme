@@ -24,13 +24,9 @@ You must make these adjustments in drupal to insure proper display or the theme 
 
 1. If you have installed the suggested [Administration menu](https://www.drupal.org/project/admin_menu) as mentioned in the [install_modules](https://github.com/rochester-rcl/rcl_drupal_theme/tree/master/install_modules) folder, you may see an issue with it randomly disappearing. You can fix that by going to **admin/config/administration/admin_menu** > unchecking **Cache menu in client-side browser** (Under *performance*)
 
+2. **Remove unnecessary default blocks.** Set all blocks aside from **Content[Content]** to **None**. This prevents the grid from being out of alignment. If you see the content area slightly shifted to one side, this is why.
 
-
-### File Paths
-If you add images into the theme you must use the correct php based path and place your image into the **images** folder.
-```
-<img class="" src="<?php print $directory;?>/images/<filename>" />
-```
+3. Default logo. Got to **admin/appearance/settings/rcl_drupal_theme** and uncheck **Use default logo**. This will prevent the default broken logo. *Note: This is a known bug and will be fixed. So if you don't see a broken logo image next to the RCL logo then we need to update this step.*
 
 ### Known Issues
 - Admin editing via mobile is poor but that is a drupal issue.
@@ -49,14 +45,6 @@ Temporary place for uncategorized items
 
 ```
 
-- To map a custom content type to a PHP template file (tpl.php) us:
-```
-node--[content-type].tpl.php
-page--[view-page-name].tpl.php
-
-Make sure to use 2 dashes and use the machine readable name for the content types.
-Place them in the templates-folder of your theme.
-```
 
 - **Navigation PHP**: Place this into the page.tpl.php file to generate menu. Currently working on a new elseif statment that allows the user to override the default menu with the dynamic drupal one. Will remove this when that is complete.
 ```
