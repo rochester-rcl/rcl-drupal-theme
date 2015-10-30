@@ -30,23 +30,22 @@ body {
 }
 
 
-
-
 /* OVERIDES
 -------------------------------*/
 
+.messages-overlay{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: auto;
+    }
 
-/* Pushing the main content down to
-compensate for the fixed header.*/
-/*.main-container.container {
-    margin-top: 100px;
-}*/
 
 .content {
     font-size: 17px;
-}
-
-
+    }
 
 
 

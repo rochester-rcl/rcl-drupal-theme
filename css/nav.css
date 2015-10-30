@@ -18,33 +18,23 @@ portion.
 /* CUSTOM STYLES
 -------------------------------*/
 
-/* Javacript Transitions */
+
+/*  UofR bar  */
 .uofrbar {
-
-}
-
-
-/* UofR bar  */
-.uofrbar {
-  background-color: #021e47;
-  width: 100%;
-  height: 35px;
-  padding: 5px;
-  /*position: fixed;*/
-  z-index: 1000;
-  top: 0;
-  }
-  /*.uofrbar.up     {
-  top:-35px;
-}*/
-
+    background-color: #021e47;
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    /*position: fixed;*/
+    z-index: 1000;
+    top: 0;
+    }
 
 /* UofR logo in navbar */
 .navbar-brand-uofr-logo{
-  width: 210px;
-  height: auto;
-}
-
+    width: 210px;
+    height: auto;
+    }
 
 /* Search box grow on focus */
 .navbar-search-grow, .navbar .form-control {
@@ -59,68 +49,70 @@ portion.
     position: relative;
     }
 
-/* Search icon over the navbar searchbox */
-.nav-search-icon{
-  position: relative;
-  right: 36px;
-  top: 2px;
-  color: #c4dbff;
-}
+
 
 /* Chat Online/Offline Toggle */
-
 .chat-offline{
-  cursor: default;
-  color: #546f99!important;
+    cursor: default;
+    color: #546f99!important;
+    }
 
-}
+/* Adds space when navbar switches to fixed */
+.navbar-spacer {
+    display: none;
+    height: 50px;
+    }
+    .navbar-spacer.show {
+    display: block;
+    }
 
 
 /* OVERIDES
+Changing Bootstrap Specific Styles
 -------------------------------*/
-
 .navbar {
-  border: none;
-  border-radius: 0;
-  }
-  .navbar.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  }
-  .logged-in .navbar.fixed {
-  top: 20px;
-  }
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    }
+    .navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    }
+    /* Pushing nav for Admin_menu */
+    .logged-in .navbar.fixed {
+    top: 20px;
+    }
 
-/* Size and positioning for the
-RCL Logo */
+/* Size and positioning for the RCL Logo */
 .navbar-brand img {
     width: 250px;
     height: auto;
     position: relative;
     bottom: 3px;
-}
+    }
 
 /* Navbar color for RCL bar */
 .navbar-default {
     background-color: #234b87;
-}
+    }
 
 /* Moving navbar down to fit uofrbar */
 .navbar-fixed-top {
-  top: 35px;
-  border-width: 0 0 1px;
-}
-.navbar-fixed-top.up { top: 0;}
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
+    top: 35px;
+    border-width: 0 0 1px;
+    }
+    .navbar-fixed-top.up { top: 0;}
+    .navbar-fixed-top,
+    .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    }
 
 
 /* RCL Logo */

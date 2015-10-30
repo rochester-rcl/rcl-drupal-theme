@@ -17,6 +17,7 @@ Install this theme as you would any other Drupal theme.
 3. Download the [Bootstrap 3](https://drupal.org/project/bootstrap) theme and unzip into **sites/all/themes**.
 4. In the Drupal admin go to **Apperance** > then find the **Bootstrap 3** theme > enable it but **DO NOT** set it as default.
 5. In the Drupal admin go to **Apperance** > then find the **RCL Theme** > enable it & set as default.
+6. [Install Modules](https://github.com/rochester-rcl/rcl_drupal_theme/tree/master/install_modules)
 
 
 ##### Drupal Admin Configurations

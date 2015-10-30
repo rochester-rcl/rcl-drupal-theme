@@ -18,11 +18,11 @@
  </div>
 </div>
 <!-- RCL Header / Nav  -->
-<header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
+<header id="navbar" role="banner" class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
       <!-- If user uploads a custom logo-->
-     <?php if ($logo): ?>
+      <?php if ($logo): ?>
       <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a>
@@ -61,6 +61,7 @@
     </div>
   </div>
 </header>
+<div class="navbar-spacer">Header</div>
 <!--======= /HEADER  ========-->
 
 

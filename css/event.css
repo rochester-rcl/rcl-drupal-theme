@@ -1,20 +1,5 @@
 
 
-/*.event-image-wrapper{
-  position: absolute;
-  top: 0;
-
-}*/
-
-
-
-
-/*.field.field-name-field-register.field-type-link-field.field-label-hidden {
-    background-color: black;
-    padding: 10px 16px;
-    color: #fff;
-}*/
-
 
 .no-registration-button {
   /*background-color: rgba(0, 0, 0, 1);*/
@@ -74,7 +59,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top:80px;
+  top:0;
   z-index: -100;
 }
 

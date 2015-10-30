@@ -1,32 +1,25 @@
 
 
-.article-image-push{
-  margin-top: 550px;
-}
 
+
+.article-image-push{
+    margin-top: 550px;
+    }
 
 .article-date {
-  font-size: 15px;
-}
-
-
-/*.field.field-name-body.field-type-text-with-summary {
-    margin-top: 50px;
-    border-top: 1px solid #E5E5E5;
-    padding-top: 20px;
-}*/
-
+    font-size: 15px;
+    }
 
 .field.field-name-field-article-cover-image.field-type-image img{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  clip: rect(0px,5000px,560px,0px);
-  left: 0;
-  right: 0;
-  top:80px;
-  z-index: -100;
-}
+    width: 100%;
+    height: auto;
+    position: absolute;
+    clip: rect(0px,5000px,560px,0px);
+    left: 0;
+    right: 0;
+    top:0;
+    z-index: -100;
+    }
 
 .article-title {
   font-size: 70px;

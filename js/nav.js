@@ -1,19 +1,19 @@
+// NAVIGATION TRANISTION
+// --------------------------------------------
+// Upon scrolling change RCL Navbar from the default postion to fixed
+// at the moment it touched the top of the browser. To prevent the page
+// from jumping we display an empty spacer that is the same height as
+// the navbar.
 
 (function ($) {
 $(window).scroll(function() {
-<<<<<<< HEAD
-<<<<<<< HEAD
     if ($(this).scrollTop() > 34){
-=======
-    if ($(this).scrollTop() > 40){
->>>>>>> parent of 81956bd... Changed JS for the header to make it default position
-=======
-    if ($(this).scrollTop() > 30){
->>>>>>> parent of ba96fa7... More additions to template.
-        $('.navbar').addClass("fixed");
+        $('.navbar').addClass("fixed"); // Navbar moves to position:fixed
+        $('.navbar-spacer ').addClass("show"); // Spacer
     }
     else{
         $('.navbar').removeClass("fixed");
+        $('.navbar-spacer').removeClass("show");
     }
 });
 })(jQuery);
