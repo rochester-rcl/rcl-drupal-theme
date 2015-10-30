@@ -22,19 +22,18 @@
     }
 
 .article-title {
-  font-size: 70px;
-}
+    font-size: 70px;
+    }
 
 .article-tagline{
-  font-size: 25px;
-  display: block;
-  font-weight: 200;
-  color: gray;
-  margin-bottom: 10px;
-}
+    font-size: 25px;
+    display: block;
+    font-weight: 200;
+    color: gray;
+    margin-bottom: 10px;
+    }
 
 @media (max-width: 768px) {
-  .article-image-push{margin-top: 70%;}
-  .article-title {font-size: 45px;}
-
-  }
+    .article-image-push{margin-top: 75%;}
+    .article-title {font-size: 45px;}
+}

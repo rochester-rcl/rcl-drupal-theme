@@ -44,3 +44,7 @@ If you add images into the theme you must use the correct php based path and pla
   - It's normal even after flushing your cache for changes to take 1-2 minutes to show.
   - Be sure you're editing the correct template.
     - Check the node #. The look through the template file names to see if they have a node # that matches the node # of the file you're editing. That will override the less specific file names. Example: **page--type-article--1.tpl.php** will override **page--type-article.tpl.php** for node 1. Node 2 and higher will use the more general **page--type-article.tpl.php**.
+- **The chat link is not showing**
+  - Your jQuery update is not installed. To update download the module install and enable.
+- **The registration button is not showing**
+  - Your jQuery update is not installed. To update download the module install and enable.

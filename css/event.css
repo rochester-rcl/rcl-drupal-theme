@@ -81,7 +81,7 @@
 }
 
 @media (max-width: 768px) {
-  .event-image-push{margin-top: 70%;}
+  .event-image-push{margin-top: 75%;}
   .event-title {font-size: 45px;}
   .no-registration-button {
     position: fixed;

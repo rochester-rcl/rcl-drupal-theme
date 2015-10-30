@@ -3,6 +3,13 @@
 # RCL Drupal Theme
 A custom drupal theme created for the River Campus libraries web site.
 
+### Table of Contents
+1. Installation (Below)
+2. [Module Installation](https://drupal.org/project/bootstrap)
+3. Templates
+4. CSS
+
+
 ## Requirements
 Before you install please make sure your Drupal instance meets the following requirements.
 
