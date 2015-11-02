@@ -1,6 +1,6 @@
 
 # Install Files
-These files a custom configurations for modules, libraries, and features.
+These are custom configurations for modules, libraries, and features.
 
 ###ckeditor and IMCE media manager
 **ckeditor.zip** - This file contains the *ckeditor* module and editor. To Install simply drag the *ckeditor* file into the module directory on your drupal instance and enable.
@@ -17,7 +17,7 @@ If you plan on adding plugins. it's recommended that you start with a clean cked
     - [Media Embed](http://ckeditor.com/addon/embed)
     - [Enhanced Image](http://ckeditor.com/addon/image2)
     - [Semantic Media Embed](http://ckeditor.com/addon/embedsemantic)
-    - Skin
+  - Skin
     - [BootstrapCK4](http://ckeditor.com/addon/bootstrapck)
 3. Then download[IMCE](https://www.drupal.org/project/imce) and Install
   - To enable IMCE go to **admin/config/content/ckeditor/edit/Full** > click **File browser settings** > select **IMCE** in the first 3 drop downs > click save.

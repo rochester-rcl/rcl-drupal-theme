@@ -4,10 +4,10 @@
 A custom drupal theme created for the River Campus libraries web site.
 
 ### Table of Contents
-1. Installation (Below)
-2. [Module Installation](https://drupal.org/project/bootstrap)
-3. Templates
-4. CSS
+1. Installation Instructions (Below)
+2. [Module Installation](https://github.com/rochester-rcl/rcl_drupal_theme/tree/master/install_modules)
+3. [Templates](https://github.com/rochester-rcl/rcl_drupal_theme/tree/master/templates)
+4. [CSS](https://github.com/rochester-rcl/rcl_drupal_theme/tree/master/css)
 
 
 ## Requirements
