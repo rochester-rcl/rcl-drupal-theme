@@ -64,6 +64,7 @@ function rcl_drupal_theme_preprocess_page(&$vars) {
     //
     // Latter items take precedence.
   }
+
 }
 
 

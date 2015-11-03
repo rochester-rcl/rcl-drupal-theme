@@ -158,9 +158,7 @@
 <div class="section-header noprint">
   <div class="container">
     <div class="page-title-header">
-      <?php if ($title):?>
-          <?php print $title; ?>
-      <?php endif; ?>
+    <?php print $node->field_section['und'][0]['taxonomy_term']->name ?>
     </div>
     <!-- Nav links -->
     <div class="sub-nav-right">

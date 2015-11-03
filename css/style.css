@@ -7,6 +7,7 @@ It contains all styles for this
 sub-theme.
 -------------------------------*/
 
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
 
 /* TABLE OF CONTENTS */
 
@@ -33,3 +34,6 @@ sub-theme.
 
 /* 7. ARTICLE PAGE: News, Blog Post, Story */
 @import url("article.css");
+
+/* 8. All Pages: About us, FAQ */
+@import url("page.css");

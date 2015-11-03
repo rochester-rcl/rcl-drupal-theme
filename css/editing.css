@@ -1,8 +1,10 @@
 
 
 
-
-
+/* Tabs  */
+.tab-container{
+  margin-top: 30px;
+}
 
 /* Styling WYSIWYG filter options.
 Sits below the WYSIWYG editor.  */
