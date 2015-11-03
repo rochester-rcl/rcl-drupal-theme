@@ -108,7 +108,7 @@
     </div>
     <div class="col-md-6">
       <!-- Location -->
-      <?php if ($page): ?>
+      <?php if ($page && !empty($content['field_location'])):?>
           <div class="event-location">
             <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
             <?php print render($content['field_location']); ?>

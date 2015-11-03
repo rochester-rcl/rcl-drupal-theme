@@ -79,7 +79,6 @@
 ?>
 
 
-
 <!--=========  HEADER   ==========-->
 <!-- Chat Online/Offline Toggle -->
 <?php
@@ -88,8 +87,19 @@
   $chat_status =  file_get_contents('http://us.libraryh3lp.com/presence/jid/urhomepage1/chat.libraryh3lp.com/text?'. $timestamp);
 ?>
 
+
+<!-- Print Header -->
+<div class="container print-header print">
+  <div class="print-rcl-logo-container">
+   <img class="print-rcl-logo" alt="River Campus Libraries" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-rcl-print.png" />
+  </div>
+   <div class="print-uofr-logo-container">
+     <img class="print-uofr-logo" alt="University of Rochester" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-uofr-print.png" />
+   </div>
+</div>
+
 <!-- UofR bar -->
-<div class="uofrbar">
+<div class="uofrbar noprint">
  <div class="container">
    <!-- UofR Logo -->
    <a class="" href="#">
@@ -98,7 +108,7 @@
  </div>
 </div>
 <!-- RCL Header / Nav  -->
-<header id="navbar" role="banner" class="navbar navbar-default">
+<header id="navbar" role="banner" class="navbar navbar-default noprint">
   <div class="container">
     <div class="navbar-header">
       <!-- If user uploads a custom logo-->
@@ -109,7 +119,8 @@
       <?php endif; ?>
       <!-- If user does not upload a custom logo - print default logo -->
       <?php if (!empty($site_name)): ?>
-      <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img class="" alt="River Campus Libraries" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-rcl-blue.png" />
+      <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+        <img class="" alt="River Campus Libraries" src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme');?>/images/logo-rcl-blue.png" />
       </a>
       <?php endif; ?>
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -124,7 +135,7 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="http://catalog.lib.rochester.edu/vwebv/myAccount">My Accounts</a></li>
-        <li><a href="http://www.library.rochester.edu/files/chat/chat.php" onclick="window.open(this.href, 'mywindowtitle','width=300,height=500'); return false" target="_blank" data-chat-status="<?php print $chat_status;?>" class="chat-toggle"></a></li>
+        <li><a href="http://www.library.rochester.edu/files/chat/chat.php" data-chat-status="<?php print $chat_status;?>" class="chat-toggle"></a></li>
         <li><a href="http://www.library.rochester.edu/contact-us">Contact</a></li>
         <li><a href="http://www.library.rochester.edu/giving">Giving</a></li>
         <li>
@@ -140,8 +151,31 @@
       </ul>
     </div>
   </div>
-  <div class="navbar-spacer">Header</div>
 </header>
+<div class="navbar-spacer noprint"></div>
+
+<!-- Experimental Sub Nav -->
+<div class="section-header noprint">
+  <div class="container">
+    <div class="page-title-header">
+      <?php if ($title):?>
+          <?php print $title; ?>
+      <?php endif; ?>
+    </div>
+    <!-- Nav links -->
+    <div class="sub-nav-right">
+      <ul class="">
+        <li><a href="http://catalog.lib.rochester.edu/vwebv/myAccount">My Accounts</a></li>
+        <li><a href="http://www.library.rochester.edu/contact-us">Contact</a></li>
+        <li><a href="http://www.library.rochester.edu/giving">Giving</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 <!--======= /HEADER  ========-->
 

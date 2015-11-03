@@ -2,53 +2,37 @@
 
 
 
-/* Adding gray background to the
-editing screens */
-body.html.not-front.logged-in.page-node-edit.node-type-event.adminimal-menu.adminimal-frontend.menu-render-collapsed.admin-menu.bootstrap-anchors-processed {
-    background-color: #f5f5f5;
-}
 
 
 /* Styling WYSIWYG filter options.
 Sits below the WYSIWYG editor.  */
 fieldset#edit-body-und-0-format{
-  border: none;
-  background: transparent;
-  font-size: 12px;
-  /* width: 50%; */
-  color: gray;
-  }
-  select#edit-body-und-0-format--2 {
-  background: lightgray;
-  }
-
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    /* width: 50%; */
+    color: gray;
+    }
+    select#edit-body-und-0-format--2 {
+        background: lightgray;
+        }
 
 input#edit-title {
-  font-size: 40px;
-  height: 66px;
-}
+    font-size: 40px;
+    height: 66px;
+    }
 
 /* Event Cover Image Field */
 div#edit-field-event-cover-image {
-    /* border: 1px solid; */
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 25px;
-     background-color: #FFF;
-}
+    background-color: #FFF;
+    }
 
-#edit-field-register
- {
+#edit-field-register {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 25px;
     background-color: #fff9dd;
-}
-
-
-/* Pushing tabs on event
-edit screen down so not
-covered by menu. */
-.logged-in .tab-container {
-    margin-top: 20px;
-}
+    }

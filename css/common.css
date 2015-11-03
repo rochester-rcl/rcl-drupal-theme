@@ -43,11 +43,16 @@ body {
     }
 
 
-.content {
-    font-size: 17px;
+.content {font-size: 17px;}
+
+.print {display: none;}
+
+/* Sizes any images placed into the content field */
+.field.field-name-body.field-type-text-with-summary img {
+    width: 100%;
+    height: auto;
     }
 
-.print{display: none;}
 
 
 /*  logged-in style adjustments

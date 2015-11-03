@@ -33,6 +33,7 @@
     margin-bottom: 10px;
     }
 
+
 @media (max-width: 768px) {
     .article-image-push{margin-top: 75%;}
     .article-title {font-size: 45px;}

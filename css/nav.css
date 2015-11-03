@@ -49,8 +49,6 @@ portion.
     position: relative;
     }
 
-
-
 /* Chat Online/Offline Toggle */
 .chat-offline{
     cursor: default;
@@ -65,6 +63,54 @@ portion.
     .navbar-spacer.show {
     display: block;
     }
+
+/* Section Navigation */
+.section-header {
+    /*background: #71a8fc;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+    height: 100px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.4+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.4)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+
+    }
+    .section-header.fixed {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        }
+    .section-header a{
+        color: gray;
+        }
+    .section-header a:hover{
+        color: #FFF;
+        }
+
+.page-title-header{
+    width: 50%;
+    float: left;
+    color: #FFF;
+    }
+
+.sub-nav-right ul{
+    width: 50%;
+    float: left;
+    }
+    .sub-nav-right ul li{
+        display: inline;
+        padding: 7px;
+        float: right;
+        }
 
 
 /* OVERIDES
@@ -114,48 +160,53 @@ Changing Bootstrap Specific Styles
     z-index: 1030;
     }
 
-
 /* RCL Logo */
 .navbar-default .navbar-brand {
     color: #777;
-}
+    }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
-  background-color: transparent;
-}
+    color: #5e5e5e;
+    background-color: transparent;
+    }
+
 .navbar-default .navbar-text {
-  color: #75a5ff;
-}
+    color: #75a5ff;
+    }
+
 /* Nav link default color  */
 .navbar-default .navbar-nav > li > a {
-  color: #71a8fc;
-}
+    color: #71a8fc;
+    }
+
 /* Nav link Hover/Focus color  */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #FFF;
-  background-color: transparent;
-}
+    color: #FFF;
+    background-color: transparent;
+    }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
-}
+    color: #555;
+    background-color: #e7e7e7;
+    }
+
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #ccc;
-  background-color: transparent;
-}
+    color: #ccc;
+    background-color: transparent;
+    }
 
 /* Removing border on mobile menu */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border: none;
-  box-shadow: none;
-}
+    border: none;
+    box-shadow: none;
+    }
 
 /* Responsive hamburger menu modifications */
 .navbar-toggle .icon-bar {
