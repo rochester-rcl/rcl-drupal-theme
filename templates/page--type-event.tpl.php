@@ -161,11 +161,12 @@
     <?php print $node->field_section['und'][0]['taxonomy_term']->name ?>
     </div>
     <!-- Nav links -->
-    <div class="sub-nav-right">
-      <ul class="">
-        <li><a href="http://catalog.lib.rochester.edu/vwebv/myAccount">My Accounts</a></li>
+    <div class="menu-container">
+      <ul class="sub-nav">
+        <?php print render($page['section_header']);?>
+        <!-- <li><a href="http://catalog.lib.rochester.edu/vwebv/myAccount">My Accounts</a></li>
         <li><a href="http://www.library.rochester.edu/contact-us">Contact</a></li>
-        <li><a href="http://www.library.rochester.edu/giving">Giving</a></li>
+        <li><a href="http://www.library.rochester.edu/giving">Giving</a></li> -->
       </ul>
     </div>
   </div>

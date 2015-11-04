@@ -18,6 +18,7 @@ portion.
 /* CUSTOM STYLES
 -------------------------------*/
 
+/*div {outline: 1px solid red;}*/
 
 /*  UofR bar  */
 .uofrbar {
@@ -45,9 +46,9 @@ portion.
     transition: width 0.5s ease-in-out;
     }
     .navbar-search-grow:focus{
-    width: 120px;
-    position: relative;
-    }
+        width: 120px;
+        position: relative;
+        }
 
 /* Chat Online/Offline Toggle */
 .chat-offline{
@@ -61,27 +62,19 @@ portion.
     height: 50px;
     }
     .navbar-spacer.show {
-    display: block;
-    }
+      display: block;
+      }
 
 /* Section Navigation */
 .section-header {
-    /*background: #71a8fc;*/
+    background: rgba(34, 70, 137, 0.8);
+    /*background: rgba(0, 0, 0, 0.5);*/
+    border-top: 1px solid #466daf;
     position: absolute;
     left: 0;
     right: 0;
     z-index: 5000;
-    height: 100px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.4+0,0+100;Neutral+Density */
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.4)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-
-
+    height: 35px;
     }
     .section-header.fixed {
         position: fixed;
@@ -90,33 +83,63 @@ portion.
         right: 0;
         }
     .section-header a{
-        color: gray;
+        /*color: gray;*/
         }
     .section-header a:hover{
         color: #FFF;
         }
 
 .page-title-header{
-    width: 50%;
+    width: 40%;
     float: left;
-    color: #FFF;
-    padding: 7px 10px 10px 0px;
+    color: #afccfc;
+    font-size: 19px;
+    padding: 5px 0px 5px 0px;
+    font-family: 'Cinzel', serif;
     }
 
+.menu-container{
+    float: left;
+    width: 60%;
+    font-size: 14px;
+    padding: 7px 0px 0px 0px;
+    }
 .sub-nav-right ul{
-    width: 50%;
-    float: left;
+    float: right;
     }
-    .sub-nav-right ul li{
-        display: inline;
-        padding: 7px;
-        float: right;
-        }
 
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    /*background-color: #234b87;*/
+    background: transparent;
+    border-bottom: 2px solid #afccfc;;
+    }
+
+section#block-menu-menu-lam-square,
+section#block-menu-menu-carlson-research-center {
+    float: right;
+    }
+section#block-menu-menu-lam-square ul li,
+section#block-menu-menu-carlson-research-center ul li {
+    display: inline;
+    }
+section#block-menu-menu-lam-square ul li a,
+section#block-menu-menu-carlson-research-center ul li a {
+    display: inline;
+    color: #afccfc;
+    }
 
 /* OVERIDES
 Changing Bootstrap Specific Styles
 -------------------------------*/
+
+/* Hidding the section navigation titles */
+section .block-title {
+    display: none;
+    }
+
+
 .navbar {
     border: none;
     border-radius: 0;
@@ -186,6 +209,7 @@ Changing Bootstrap Specific Styles
 .navbar-default .navbar-nav > li > a:focus {
     color: #FFF;
     background-color: transparent;
+    border: none;
     }
 
 .navbar-default .navbar-nav > .active > a,
@@ -193,6 +217,7 @@ Changing Bootstrap Specific Styles
 .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
     background-color: #e7e7e7;
+    border: none;
     }
 
 .navbar-default .navbar-nav > .disabled > a,
@@ -200,6 +225,7 @@ Changing Bootstrap Specific Styles
 .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
     background-color: transparent;
+    border: none;
     }
 
 /* Removing border on mobile menu */
@@ -276,4 +302,12 @@ It was adding accessive padding-right. */
       width: 90%;
       margin: auto;
   }
+  .menu-container{
+      font-size: 11px;
+      width: 80%;
+      }
+  .page-title-header{
+      width: 20%;
+      font-size: 12px;
+      }
 }
