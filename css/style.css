@@ -37,3 +37,6 @@ sub-theme.
 
 /* 8. All Pages: About us, FAQ */
 @import url("page.css");
+
+/* 9. Main Section Pages: Lam Square, CSRC */
+@import url("section.css");

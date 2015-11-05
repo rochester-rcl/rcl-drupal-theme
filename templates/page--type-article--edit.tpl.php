@@ -161,8 +161,6 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
-HE THIS IS READING THE PAGE___EDIT____TPL
-
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>
@@ -182,6 +180,13 @@ HE THIS IS READING THE PAGE___EDIT____TPL
 
       <!-- ALERT MESSAGES -->
       <?php print $messages; ?>
+
+      <!-- TABS -->
+      <?php if (!empty($tabs)): ?>
+        <div class="tab-container-edit-screens">
+        <?php print render($tabs); ?>
+      </div>
+      <?php endif; ?>
 
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>

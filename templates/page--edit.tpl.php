@@ -1,9 +1,7 @@
 <?php
 /**
  * @file
- * -----------------------------
- *  EDIT EVENT TYPE TEMPLATE
- * -----------------------------
+ * Default theme implementation to display a single Drupal page.
  *
  * The doctype, html, head and body tags are not in this template. Instead they
  * can be found in the html.tpl.php template in this directory.
@@ -137,8 +135,29 @@
     </div>
   </div>
 </header>
-<div class="navbar-spacer">Header</div>
+<div class="navbar-spacer"></div>
+
+
+<?php if (!empty($page['taxonomy_term'])): ?>
+<!-- Section Sub Nav -->
+<div class="section-header noprint">
+  <div class="container">
+    <div class="page-title-header">
+    <?php print $node->field_section['und'][0]['taxonomy_term']->name ?>
+    </div>
+    <!-- Nav links -->
+    <div class="menu-container">
+      <ul class="sub-nav">
+        <?php print render($page['section_header']);?>
+      </ul>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
+
+
 <!--======= /HEADER  ========-->
+
 
 
 
@@ -150,12 +169,10 @@
     <?php if (!empty($site_slogan)): ?>
       <p class="lead">Site slogan</p>
     <?php endif; ?>
-
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
   <div class="row">
-
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_first']); ?>
@@ -163,36 +180,54 @@
     <?php endif; ?>
 
     <section<?php print $content_column_class; ?>>
-
+      <?php if (!empty($page['highlighted'])): ?>
+        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+      <?php endif; ?>
       <a id="main-content"></a>
-      <?php print render($title_prefix);?>
+      <?php print render($title_prefix); ?>
 
-      <!-- Title removed. Printed on the node tpl -->
+<!--===== TABS =====-->
+    <?php if (!empty($tabs)): ?>
+      <div class="tab-container-edit-screens">
+      <?php print render($tabs); ?>
+    </div>
+    <?php endif; ?>
+
+
 
       <?php print render($title_suffix); ?>
-
-      <!-- ALERT MESSAGES -->
       <?php print $messages; ?>
-
-      <?php if (!empty($tabs)): ?>
-        <div class="tab-container-edit-screens">
-        <?php print render($tabs); ?>
-      </div>
-      <?php endif; ?>
 
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
+      <?php if (!empty($action_links)): ?>
+        <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php endif; ?>
+
+
       <?php print render($page['content']); ?>
+
+
+
     </section>
 
+    <?php if (!empty($page['sidebar_second'])): ?>
+      <aside class="col-sm-3" role="complementary">
+        <?php print render($page['sidebar_second']); ?>
+      </aside>  <!-- /#sidebar-second -->
+    <?php endif; ?>
 
   </div>
 </div>
 
 
-
-
+<!--===== FOOTER =====-->
 <footer class="footer container">
   <?php print render($page['footer']); ?>
 </footer>
+
+
+
+<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/chat.js'; ?>"></script>
+<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/nav.js'; ?>"></script>

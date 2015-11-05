@@ -73,7 +73,7 @@ portion.
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 5000;
+    z-index: 1000;
     height: 35px;
     }
     .section-header.fixed {
@@ -81,6 +81,10 @@ portion.
         top: 50px;
         left: 0;
         right: 0;
+        }
+    /* Adjustment for Admin menu  */
+    .logged-in .section-header.fixed {
+        top: 70px;
         }
     .section-header a{
         /*color: gray;*/
@@ -108,14 +112,6 @@ portion.
     float: right;
     }
 
-.nav>li>a:hover,
-.nav>li>a:focus {
-    text-decoration: none;
-    /*background-color: #234b87;*/
-    background: transparent;
-    border-bottom: 2px solid #afccfc;;
-    }
-
 section#block-menu-menu-lam-square,
 section#block-menu-menu-carlson-research-center {
     float: right;
@@ -128,17 +124,29 @@ section#block-menu-menu-lam-square ul li a,
 section#block-menu-menu-carlson-research-center ul li a {
     display: inline;
     color: #afccfc;
+    padding: 7px 12px;
     }
 
 /* OVERIDES
 Changing Bootstrap Specific Styles
 -------------------------------*/
 
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    /*background-color: #234b87;*/
+    background: transparent;
+    border-bottom: 2px solid #afccfc;;
+    }
+
+.nav>li>a {
+    /*padding: 10px 11px;*/
+    }
+
 /* Hidding the section navigation titles */
 section .block-title {
     display: none;
     }
-
 
 .navbar {
     border: none;
@@ -304,10 +312,17 @@ It was adding accessive padding-right. */
   }
   .menu-container{
       font-size: 11px;
-      width: 80%;
+      width: 70%;
       }
   .page-title-header{
-      width: 20%;
-      font-size: 12px;
+      width: 30%;
+      font-size: 16px;
       }
+  section#block-menu-menu-lam-square ul li a,
+  section#block-menu-menu-carlson-research-center ul li a {
+      display: inline;
+      color: #afccfc;
+      padding: 5px 5px 6px 5px;
+      }
+
 }

@@ -73,8 +73,6 @@
 
 
 
-
-
 <div class="under-const-bg-image">
 <!-- Content Begins -->
 <div class="main-container container">
@@ -86,11 +84,6 @@
 </div>
 </div>
 <div class="hp-content-feed">
-  <div class="under-cons-message">
-   <!--php print render($page['news']) -->
-  <h4>Website coming soon.</h4>
-</div>
-
 </div>
 
 

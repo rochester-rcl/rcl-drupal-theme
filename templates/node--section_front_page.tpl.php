@@ -81,43 +81,27 @@
  */
 ?>
 
+
 <!--==== EVENT IMAGE  ====-->
 <div class="">
-  <?php print render($content['field_event_cover_image']); ?>
+  <?php print render($content['field_section_cover_image']); ?>
 </div>
 
 <div class="main-container container">
-  <div class="row content event-image-push"<?php print $content_attributes; ?>>
+  <div class="row content section-image-push"<?php print $content_attributes; ?>>
     <?php if ($page && !empty($content['field_register'])):?>
       <div class="register-button ">
         <?php print render($content['field_register']); ?>
       </div>
     <?php endif; ?>
     <?php if ($page): ?>
-      <?php if ($title): ?><header><h1 class="event-title"><?php print $title; ?></h1></header><?php endif; ?>
+      <?php if ($title): ?><header><h1 class="section-title"><?php print $title; ?></h1></header><?php endif; ?>
     <?php endif; ?>
     <!-- Tagline -->
-    <div class="event-tagline">
-      <?php print render($content['field_event_tagline']); ?>
+    <div class="section-tagline">
+      <?php print render($content['field_section_tagline']); ?>
     </div>
 
-   <div class="row">
-     <div class="col-md-6">
-        <!-- Date -->
-        <div class="event-date">
-          <?php print render($content['field_event_dates']); ?>
-        </div>
-    </div>
-    <div class="col-md-6">
-      <!-- Location -->
-      <?php if ($page && !empty($content['field_location'])):?>
-          <div class="event-location">
-            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-            <?php print render($content['field_location']); ?>
-          </div>
-      <?php endif; ?>
-    </div>
-  </div>
 
     <?php
       // We hide the comments and links now so that we can render them later.
@@ -128,6 +112,10 @@
       print render($content);
     ?>
   </div>
+</div>
+
+<div class="block_view">
+    <?php print render($page['news']);?>
 </div>
 
 <!-- Changes button to read as message

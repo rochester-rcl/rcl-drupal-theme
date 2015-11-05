@@ -135,7 +135,27 @@
     </div>
   </div>
 </header>
-<div class="navbar-spacer">Header</div>
+<div class="navbar-spacer"></div>
+
+<!-- Section Sub Nav -->
+<?php if(!empty($node->field_section['und'][0]['taxonomy_term'])): ?>
+<div class="section-header noprint">
+  <div class="container">
+    <div class="page-title-header">
+    <?php print $node->field_section['und'][0]['taxonomy_term']->name ?>
+    </div>
+    <!-- Nav links -->
+    <div class="menu-container">
+      <ul class="sub-nav">
+        <?php print render($page['section_header']);?>
+      </ul>
+    </div>
+  </div>
+</div>
+<?php endif;  ?>
+
+
+
 <!--======= /HEADER  ========-->
 
 
@@ -165,6 +185,15 @@
       <?php endif; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
+
+<!--===== TABS =====-->
+    <?php if (!empty($tabs)): ?>
+      <div class="tab-container-edit-screens">
+      <?php print render($tabs); ?>
+    </div>
+    <?php endif; ?>
+
+
 <!-- Page title  -->
       <?php if (!empty($title)): ?>
         <div class="page-title-wrapper">
@@ -182,12 +211,6 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
 
-      <!--===== TABS =====-->
-      <?php if (!empty($tabs)): ?>
-        <div class="container tab-container">
-        <?php print render($tabs); ?>
-        </div>
-      <?php endif; ?>
 
       <?php print render($page['content']); ?>
 

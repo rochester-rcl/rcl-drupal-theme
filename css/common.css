@@ -30,12 +30,18 @@ body {
 }
 
 
+
+.project-marker{
+  padding: 10px 20px;
+  background-color: #021e47;
+}
+
 /* OVERIDES
 -------------------------------*/
 
 .messages-overlay{
     position: absolute;
-    top: 20px;
+    top: 45px;
     left: 0;
     right: 0;
     width: 80%;
@@ -53,6 +59,10 @@ body {
     height: auto;
     }
 
+/* hidding the section tax. term from the display */
+.field.field-name-field-section.field-type-taxonomy-term-reference.field-label-hidden {
+    display: none;
+    }
 
 
 /*  logged-in style adjustments

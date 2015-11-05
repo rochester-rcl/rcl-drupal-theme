@@ -1,0 +1,49 @@
+
+
+
+
+
+.section-title {
+    font-size: 70px;
+    font-family: 'Cinzel', serif;
+    color: #FFF;
+    position: absolute;
+    top: 150px;
+    }
+
+.section-tagline {
+    color: #afccfc;
+    font-size: 27px;
+    font-weight: 200;
+    position: absolute;
+    top: 250px;
+    max-width: 650px;
+    }
+
+.section-image-push {
+  margin-top: 700px;
+}
+
+.field.field-name-field-section-cover-image.field-type-image img{
+    width: 100%;
+    height: auto;
+    clip: rect(0px,5000px,720px,0px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index: -100;
+    }
+
+/* Hiding the taxonomy term display */
+.field.field-name-field-section.field-type-taxonomy-term-reference.field-label-above {
+    display: none;
+    }
+
+@media (max-width: 768px) {
+  .section-title,
+  .section-tagline {
+      display: none;
+      }
+
+}

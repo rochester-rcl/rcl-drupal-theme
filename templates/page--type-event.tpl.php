@@ -154,7 +154,7 @@
 </header>
 <div class="navbar-spacer noprint"></div>
 
-<!-- Experimental Sub Nav -->
+<!-- Section Sub Nav -->
 <div class="section-header noprint">
   <div class="container">
     <div class="page-title-header">
@@ -173,9 +173,6 @@
 </div>
 
 
-
-
-
 <!--======= /HEADER  ========-->
 
 
@@ -187,22 +184,26 @@
       <?php print render($title_prefix);?>
       <!-- Title removed. Printed on the node tpl -->
       <?php print render($title_suffix); ?>
-      <!-- ALERT MESSAGES -->
-      <div class="messages-overlay">
-      <?php print $messages; ?>
-      </div>
+      <!--======= ALERT MESSAGES =======-->
+      <?php if (!empty($messages)): ?>
+        <div class="messages-overlay">
+        <?php print $messages; ?>
+        </div>
+      <?php endif; ?>
+
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
-      <?php print render($page['content']); ?>
-    </section>
-    <section>
+      <!--======= TABS =======-->
       <?php if (!empty($tabs)): ?>
         <div class="container tab-container">
         <?php print render($tabs); ?>
       </div>
       <?php endif; ?>
+      <!--======= CONTENT =======-->
+      <?php print render($page['content']); ?>
     </section>
+
     <?php if (!empty($page['sidebar_second'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_second']); ?>
