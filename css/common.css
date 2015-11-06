@@ -29,7 +29,11 @@ body {
   padding:0;
 }
 
-
+.google-form{
+  background: transparent;
+  border: none;
+  
+}
 
 .project-marker{
   padding: 10px 20px;

@@ -114,9 +114,7 @@
   </div>
 </div>
 
-<div class="block_view">
-    <?php print render($page['news']);?>
-</div>
+
 
 <!-- Changes button to read as message
 if no link added to register-button

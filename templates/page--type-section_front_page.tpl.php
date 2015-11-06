@@ -213,11 +213,17 @@
 </div>
 <?php endif; ?>
 
+
+<div class="block_view">
+    <?php print render($page['news']);?>
+</div>
+
 <!--===== FOOTER =====-->
 <footer class="footer container">
+  Copyright © 1998-2015 University of Rochester Libraries. All Rights Reserved
   <?php print render($page['footer']); ?>
 </footer>
 
-
+<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/feed.js'; ?>"></script>
 <script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/chat.js'; ?>"></script>
 <script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/nav.js'; ?>"></script>
