@@ -155,7 +155,22 @@
 </header>
 <div class="navbar-spacer noprint"></div>
 
-
+<!-- Section Sub Nav -->
+<?php if(!empty($node->field_section['und'][0]['taxonomy_term'])): ?>
+<div class="section-header noprint">
+  <div class="container">
+    <div class="page-title-header">
+    <?php print $node->field_section['und'][0]['taxonomy_term']->name ?>
+    </div>
+    <!-- Nav links -->
+    <div class="menu-container">
+      <ul class="sub-nav">
+        <?php print render($page['section_header']);?>
+      </ul>
+    </div>
+  </div>
+</div>
+<?php endif;  ?>
 
 
 
@@ -195,10 +210,17 @@
 
 
 
-<!--===== FOOTER =====-->
-<footer class="footer container">
-  <?php print render($page['footer']); ?>
-</footer>
+    <!--===== FOOTER =====-->
+    <footer class="footer container">
+      <div class="copyright">Copyright © 1998-2015 University of Rochester Libraries. All Rights Reserved</div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/rivercampuslibraries"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/rclibraries"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/user/RCLibraries"><i class="fa fa-youtube"></i></a>
+        <a href="https://www-flickr-com.pc181.lib.rochester.edu/photos/carlsonlibrary/"><i class="fa fa-flickr"></i></a>
+      </div>
+      <?php print render($page['footer']); ?>
+    </footer>
 
 
 <script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/chat.js'; ?>"></script>

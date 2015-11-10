@@ -7,7 +7,10 @@ ___________________________*/
     }
     .views-row.no-img {
         min-height: 220px;
-        background-color: gray;
+        background-color: #9da4aa;
+        }
+    .views-row.no-img {
+        color: black;
         }
 
 .view-lam-square-updates .views-row {
@@ -25,7 +28,9 @@ ___________________________*/
         text-decoration: none;
         color: #FFF;
         }
-
+        .view-lam-square-updates .views-row a.no-img {
+            /*color: black;*/
+            }
 
 
 /* BUTTON */
@@ -51,20 +56,19 @@ ___________________________*/
 
 /* TITLE */
 .view-lam-square-updates .views-field-title {
-  color: #FFF;
-  width: 80%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  position: absolute;
-  bottom: 75px;
-  left: 0;
-  margin: auto;
-  width: 100%;
-  text-align: left;
-  font-size: 38px;
-  padding: 10px 5px 5px 25px;
-  font-family: 'Merriweather', serif;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    text-align: left;
+    font-size: 38px;
+    padding: 10px 5px 5px 25px;
+    font-family: 'Merriweather', serif;
     }
 
 /* TAGLINE */
@@ -93,18 +97,49 @@ ___________________________*/
     .view-lam-square-updates .views-field-field-article-tagline.no-img ,
     .view-lam-square-updates .views-field-field-event-tagline.no-img {
       background: transparent;
-      border: 1px solid red;
+      color: black;
     }
 
 
 .more_updates {
   width: 100%;
   display: block;
-  background: gray;
-  float: left;
+  background: #9da4aa;
   font-family: 'Merriweather', serif;
   text-align: center;
+  height: 300px;
+  padding: 70px;
+  font-size: 34px;
+  border-top: 2px solid #fff;
 }
+
+.para-update{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.section-footer{
+  margin-top: 0;
+}
+
+.copyright{
+  font-size: 12px;
+  float: right;
+}
+.social-icons{
+  display: block;
+  float: left;
+}
+.social-icons a{
+  color: black;
+  font-size: 25px;
+  padding-left: 13px;
+  opacity: 0.8;
+}
+.social-icons a:hover{
+  opacity: 1;
+}
+
 
 /*__________________________*/
 
@@ -155,20 +190,21 @@ ___________________________*/
 
 
 
-/*@media (min-width: 1090px) {
-  .view-lam-square-updates .views-field-title {font-size: 50px}
 
-}*/
 
 @media (max-width: 1090px) {
   .section-image-push {
     margin-top: 65%;
   }
+  .section-btn-postion {
+      display: none;
+      }
 }
 
 @media (max-width: 768px) {
 .section-title,
-.section-tagline {
+.section-tagline,
+.section-btn-postion {
     display: none;
     }
 .view-lam-square-updates .views-field-field-article-tagline,
@@ -176,12 +212,33 @@ ___________________________*/
     display: none;
     }
 
+.copyright{
+  float: left;
+  text-align: center;
+}
+.social-icons{
+  float: left;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+}
 
+.more_updates {
+  height: 155px;
+  padding: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.para-update{
+  font-size: 14px;
+  font-weight: 100;
+}
 
 /* VIEWS
 ___________________________*/
 .view-lam-square-updates .views-row {
     width: 100%;
+    min-height: 85px;
     }
 
 /* TITLE */
@@ -195,14 +252,6 @@ ___________________________*/
     font-size: 18px;
     padding: 10px 5px 12px 25px;
     font-family: 'Merriweather', serif;
-    /* Graident */
-    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
     }
 
 /* DATE */

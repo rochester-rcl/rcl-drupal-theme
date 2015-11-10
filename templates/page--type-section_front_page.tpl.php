@@ -215,18 +215,25 @@
 
 
 <div class="block_view">
-    <?php print render($page['news']);?>
+  <?php print render($page['news']);?>
     <div class="more_updates">
       Check back for more updates.
-      <div class="">We want to hear from you!</div>
+      <div class="para-update">We want to hear from you!</div>
+      <a class="btn btn-default btn-lg" href="https://rcld7.lib.rochester.edu/lam-square/feedback" role="button">Give us Feedback</a>
     </div>
 </div>
 
 
 
 <!--===== FOOTER =====-->
-<footer class="footer container">
-  Copyright © 1998-2015 University of Rochester Libraries. All Rights Reserved
+<footer class="footer container section-footer">
+  <div class="copyright">Copyright © 1998-2015 University of Rochester Libraries. All Rights Reserved</div>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/rivercampuslibraries"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/rclibraries"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.youtube.com/user/RCLibraries"><i class="fa fa-youtube"></i></a>
+    <a href="https://www-flickr-com.pc181.lib.rochester.edu/photos/carlsonlibrary/"><i class="fa fa-flickr"></i></a>
+  </div>
   <?php print render($page['footer']); ?>
 </footer>
 

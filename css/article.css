@@ -4,7 +4,7 @@
 .article-image-push{
     margin-top: 600px;
     }
-    .article-image-push.none{margin-top:0;}
+    .article-image-push.none{margin-top:40px;}
 
 .article-date {
     font-size: 15px;
