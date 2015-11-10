@@ -64,11 +64,12 @@
     }
 
 .event-image-push{
-    margin-top: 550px;
+    margin-top: 600px;
     }
 
 .event-title {
     font-size: 70px;
+    font-family: 'Merriweather', serif;
     }
 
 .event-tagline{

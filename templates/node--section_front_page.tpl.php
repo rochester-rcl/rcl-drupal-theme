@@ -111,10 +111,15 @@
       hide($content['field_event_tagline']);
       print render($content);
     ?>
+
+    <a class="section-btn-postion btn btn-primary btn-lg" href="#updates" role="button">Project Updates</a>
+
   </div>
+
+
 </div>
 
-
+<a name="updates"></a>
 
 <!-- Changes button to read as message
 if no link added to register-button

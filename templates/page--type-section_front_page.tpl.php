@@ -216,7 +216,13 @@
 
 <div class="block_view">
     <?php print render($page['news']);?>
+    <div class="more_updates">
+      Check back for more updates.
+      <div class="">We want to hear from you!</div>
+    </div>
 </div>
+
+
 
 <!--===== FOOTER =====-->
 <footer class="footer container">

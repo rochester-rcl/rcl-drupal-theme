@@ -81,38 +81,50 @@
  */
 ?>
 
-<!--==== ARTICLE IMAGE  ====-->
-<div class="article_image_container">
-  <?php print render($content['field_article_cover_image']); ?>
-</div>
 
-<div class="main-container container">
-  <div class="row content article-image-push"<?php print $content_attributes; ?>>
-
-    <?php if ($page): ?>
-      <?php if ($title): ?><header><h1 class="article-title"><?php print $title; ?></h1></header><?php endif; ?>
-    <?php endif; ?>
-    <!-- Tagline -->
-    <div class="article-tagline">
-      <?php print render($content['field_article_tagline']); ?>
-    </div>
-
-        <!-- Date -->
-        <div class="article-date">
-          <?php print render($content['field_article_date']); ?>
-        </div>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      hide($content['field_article_cover_image']);
-      hide($content['field_article_tagline']);
-      print render($content);
-    ?>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+  <div class="google-form-fix">
+  <form action="https://docs.google.com/forms/d/1sLB0t9i-MxAjTlnwbN_ySU4Zy1RlAkaPlisaEorjx3I/formResponse?embedded=true" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+  <div class="ss-form-question errorbox-good" role="listitem">
+  <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+  <label class="ss-q-item-label" for="entry_1684187077"><div class="ss-q-title">Name:
+  <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+  <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+  <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+  <input type="text" name="entry.1684187077" value="" class="ss-q-short" id="entry_1684187077" dir="auto" aria-label="Name:  " aria-required="true" required="" title="">
+  <div class="error-message" id="2125766850_errorMessage"></div>
+  <div class="required-message">This is a required question</div>
+  </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+  <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+  <label class="ss-q-item-label" for="entry_198025923"><div class="ss-q-title">Email:
+  <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+  <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+  <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+  <input type="text" name="entry.198025923" value="" class="ss-q-short" id="entry_198025923" dir="auto" aria-label="Email:  Please use your rochester.edu email address!" aria-required="true" required="" pattern=".*rochester.edu.*" title="Please use your rochester.edu email address!">
+  <div class="error-message" id="372449018_errorMessage">Please use your rochester.edu email address!</div>
+  <div class="required-message">This is a required question</div>
+  </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+  <div dir="auto" class="ss-item  ss-paragraph-text"><div class="ss-form-entry">
+  <label class="ss-q-item-label" for="entry_1896739912"><div class="ss-q-title">Question? Idea? Thoughts?
   </div>
-</div>
+  <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+  <textarea name="entry.1896739912" rows="8" cols="0" class="ss-q-long" id="entry_1896739912" dir="auto" aria-label="Question? Idea? Thoughts?  "></textarea>
+  <div class="error-message" id="968326040_errorMessage"></div>
+  <div class="required-message">This is a required question</div>
+  </div></div></div>
+  <input type="hidden" name="draftResponse" value="[,,&quot;8762324621860250018&quot;]
+  ">
+  <input type="hidden" name="pageHistory" value="0">
 
-<!-- Changes button to read as message
-if no link added to register-button
-field on admin form -->
-<script src="<?php print base_path() . drupal_get_path('theme', 'rcl_drupal_theme') . '/js/node-article.js'; ?>"></script>
+  <input type="hidden" name="fvv" value="0">
+
+
+  <input type="hidden" name="fbzx" value="8762324621860250018">
+
+  <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+  <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+  <div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+  </tr></tbody></table></div></ol></form>
+  </div>
+
+</div>

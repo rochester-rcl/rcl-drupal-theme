@@ -2,69 +2,109 @@
 /* VIEWS
 ___________________________*/
 .views-row {
-  border: none;
-  background-color: black;
-}
-.views-row-1.yo {
-  border: 2px solid red;
-}
+    border: none;
+    background-color: black;
+    }
+    .views-row.no-img {
+        min-height: 220px;
+        background-color: gray;
+        }
 
 .view-lam-square-updates .views-row {
     position: relative;
-    width: 50%;
-    /*outline: 1px solid;*/
+    width: 100%;
     float: left;
     border-top: 2px solid #FFF;
     }
     .view-lam-square-updates .views-row img {
         width: 100%;
         height: auto;
-        opacity: 0.7;
+        opacity: 1;
         }
     .view-lam-square-updates .views-row a {
         text-decoration: none;
         color: #FFF;
         }
 
-.view-lam-square-updates .views-row-odd{
-    border-right:2px solid #FFF;
-    }
 
+
+/* BUTTON */
+.section-btn-postion{
+    position: absolute;
+    top: 500px;
+    color: #FFF;
+    background-color: #021e47;
+    border: none;
+
+}
+
+/* DATE */
 .view-lam-square-updates .views-field-field-article-date {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #021e47;
-    padding: 7px 13px;
-    color: #FFF;
+    bottom: 140px;
+    left: 22px;
+    background: rgba(0,0,0, 0.8);
+    padding: 4px 8px;
     border-radius: 5px;
+    color: gray;
     }
 
 /* TITLE */
 .view-lam-square-updates .views-field-title {
-    position: absolute;
-    top: 57%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-    font-size: 30px;
+  color: #FFF;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  font-size: 38px;
+  padding: 10px 5px 5px 25px;
+  font-family: 'Merriweather', serif;
     }
 
+/* TAGLINE */
 .view-lam-square-updates .views-field-field-article-tagline,
 .view-lam-square-updates .views-field-field-event-tagline {
     position: absolute;
-    bottom: 20%;
-    text-align: center;
+    text-align: left;
     margin: auto;
     left: 0;
-    right: 0;
-    color: #afccfc;
+    bottom: 0;
+    color: #c4c8d1;
+    height: 94px;
     font-size: 18px;
+    padding: 10px 25px 35px 25px;
     font-weight: 200;
-    width: 70%;
+    width: 100%;
+    /* Graident */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
     }
+    .view-lam-square-updates .views-field-field-article-tagline.no-img ,
+    .view-lam-square-updates .views-field-field-event-tagline.no-img {
+      background: transparent;
+      border: 1px solid red;
+    }
+
+
+.more_updates {
+  width: 100%;
+  display: block;
+  background: gray;
+  float: left;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
 
 /*__________________________*/
 
@@ -112,6 +152,14 @@ ___________________________*/
     display: none;
     }
 
+
+
+
+/*@media (min-width: 1090px) {
+  .view-lam-square-updates .views-field-title {font-size: 50px}
+
+}*/
+
 @media (max-width: 1090px) {
   .section-image-push {
     margin-top: 65%;
@@ -123,6 +171,10 @@ ___________________________*/
 .section-tagline {
     display: none;
     }
+.view-lam-square-updates .views-field-field-article-tagline,
+.view-lam-square-updates .views-field-field-event-tagline {
+    display: none;
+    }
 
 
 
@@ -132,5 +184,37 @@ ___________________________*/
     width: 100%;
     }
 
+/* TITLE */
+.view-lam-square-updates .views-field-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    padding: 10px 5px 12px 25px;
+    font-family: 'Merriweather', serif;
+    /* Graident */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    }
+
+/* DATE */
+.view-lam-square-updates .views-field-field-article-date {
+    position: absolute;
+    bottom: 48px;
+    left: 22px;
+    background: rgba(0,0,0, 0.8);
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: gray;
+    font-size: 12px;
+    }
 
 }

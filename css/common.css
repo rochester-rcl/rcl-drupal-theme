@@ -32,7 +32,7 @@ body {
 .google-form{
   background: transparent;
   border: none;
-  
+
 }
 
 .project-marker{
@@ -67,6 +67,17 @@ body {
 .field.field-name-field-section.field-type-taxonomy-term-reference.field-label-hidden {
     display: none;
     }
+
+
+.footer {
+    /* margin-top: 45px; */
+    padding-top: 35px;
+    padding-bottom: 36px;
+    /* border-top: 1px solid #E5E5E5; */
+    background-color: #e8e9d6;
+    width: 100%;
+    }
+
 
 
 /*  logged-in style adjustments

@@ -1,10 +1,10 @@
 
 
 
-
 .article-image-push{
-    margin-top: 550px;
+    margin-top: 600px;
     }
+    .article-image-push.none{margin-top:0;}
 
 .article-date {
     font-size: 15px;
@@ -36,5 +36,6 @@
 
 @media (max-width: 768px) {
     .article-image-push{margin-top: 75%;}
+    .article-image-push.none {margin-top: 0}
     .article-title {font-size: 45px;}
 }
