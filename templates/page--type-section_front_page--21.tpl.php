@@ -4,7 +4,8 @@
 /**
  * @file
  * -----------------------------
- *  EVENT CONTENT TYPE PAGE TEMPLATE
+ *  SECTION CONTENT TYPE: Node 21 is targeting
+ *  the CSRS 
  * -----------------------------
  *
  * The doctype, html, head and body tags are not in this template. Instead they
