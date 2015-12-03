@@ -35,7 +35,7 @@
 
 
 @media (max-width: 768px) {
-    .article-image-push{margin-top: 75%;}
+    .article-image-push{margin-top: 50%;}
     .article-image-push.none {margin-top: 0}
     .article-title {font-size: 45px;}
 }

@@ -15,14 +15,14 @@ ___________________________*/
 
 .view-lam-square-updates .views-row {
     position: relative;
-    width: 100%;
+    width: 50%;
     float: left;
     border-top: 2px solid #FFF;
     }
     .view-lam-square-updates .views-row img {
         width: 100%;
         height: auto;
-        opacity: 1;
+        opacity: 0.5;
         }
     .view-lam-square-updates .views-row a {
         text-decoration: none;
@@ -32,6 +32,10 @@ ___________________________*/
             /*color: black;*/
             }
 
+
+.views-row-odd {
+    border-right: 2px solid #FFF;
+    }
 
 /* BUTTON */
 .section-btn-postion{
@@ -46,10 +50,10 @@ ___________________________*/
 /* DATE */
 .view-lam-square-updates .views-field-field-article-date {
     position: absolute;
-    bottom: 140px;
+    bottom: 109px;
     left: 22px;
-    background: rgba(0,0,0, 0.8);
-    padding: 4px 8px;
+    background: rgba(0,0,0, 0.7);
+    padding: 2px 7px;
     border-radius: 5px;
     color: gray;
     }
@@ -61,12 +65,13 @@ ___________________________*/
     overflow: hidden;
     text-overflow: ellipsis;
     position: absolute;
-    bottom: 75px;
+    bottom: 64px;
     left: 0;
     margin: auto;
+    z-index: 90000;
     width: 100%;
     text-align: left;
-    font-size: 38px;
+    font-size: 25px;
     padding: 10px 5px 5px 25px;
     font-family: 'Merriweather', serif;
     }
@@ -82,7 +87,7 @@ ___________________________*/
     color: #c4c8d1;
     height: 94px;
     font-size: 18px;
-    padding: 10px 25px 35px 25px;
+    padding: 22px 25px 35px 25px;
     font-weight: 200;
     width: 100%;
     /* Graident */
@@ -239,6 +244,10 @@ ___________________________*/
 .view-lam-square-updates .views-row {
     width: 100%;
     min-height: 85px;
+    }
+
+.views-row-odd {
+    border-right: none;
     }
 
 /* TITLE */

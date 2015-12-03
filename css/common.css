@@ -57,11 +57,7 @@ body {
 
 .print {display: none;}
 
-/* Sizes any images placed into the content field */
-.field.field-name-body.field-type-text-with-summary img {
-    width: 100%;
-    height: auto;
-    }
+
 
 /* hidding the section tax. term from the display */
 .field.field-name-field-section.field-type-taxonomy-term-reference.field-label-hidden {
@@ -86,10 +82,13 @@ body.logged-in                        {margin-top: 19px;    }
 .logged-in .uofrbar                   {top: 29px!important; }
 body.logged-in .navbar-fixed-top      {top: 64px;           }
 /*.logged-in .main-container.container  {margin-top: 100px;   }*/
-.logged-in .event-image-push          {margin-top: 550px;   }
 
 
 @media (max-width: 890px) {
-  .logged-in .event-image-push{margin-top: 70%;}
+  /* Sizes any images placed into the content field */
+  .field.field-name-body.field-type-text-with-summary img {
+      width: 100%;
+      height: auto;
+      }
 
 }
