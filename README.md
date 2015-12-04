@@ -1,6 +1,6 @@
-> This project is currently under development.
+> This project is currently under development. Documentation and code may be spotty. 
 
-# RCL Drupal Theme
+# RCL Drupal Theme (In progress)
 A custom drupal theme created for the River Campus libraries web site.
 
 ### Table of Contents
