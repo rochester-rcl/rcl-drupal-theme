@@ -7,16 +7,13 @@ These are custom configurations for modules, libraries, and features.
 
 ### Modules
 
-##### Required Modules
+##### Suggested Modules
 - [Views](https://www.drupal.org/project/views)
 Allows you to display dynamic content via the database.
 - [Date](https://www.drupal.org/project/date) - Required for **Event** and **Article** content types.
 - [Features](https://www.drupal.org/project/features) - Required for importing features such as custom content types.
 - [Link](https://www.drupal.org/project/link)- Required for **Event** content type.
 - [Context](https://www.drupal.org/project/context)
-
-
-##### Suggested Modules
 - [Module Filter](https://www.drupal.org/project/module_filter)
 Helps you to filter and find you modules quickly.
 - [Pathauto](https://www.drupal.org/project/pathauto) - The Pathauto module automatically generates URL/path aliases for various kinds of content (nodes, taxonomy terms, users) without requiring the user to manually specify the path alias.
@@ -25,8 +22,6 @@ Helps you to filter and find you modules quickly.
 - [Rules](https://www.drupal.org/project/rules)
 - [Entity API](https://www.drupal.org/project/entity) - Required by **Rules**
 - [XML sitemap](https://www.drupal.org/project/xmlsitemap) - The XML sitemap module creates a sitemap that conforms to the sitemaps.org specification.
-- [Views](https://www.drupal.org/project/views)
-- [Views](https://www.drupal.org/project/views)
 - [Views](https://www.drupal.org/project/views)
 
 
